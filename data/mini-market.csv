@@ -1,0 +1,1611 @@
+"","x1","x2","x3","x4","x5","x6","x7","x8","x9"
+"1","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"2","Deodorant",NA,NA,NA,NA,NA,NA,NA,NA
+"3","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"4","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"5","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"6","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"7","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"8","Magazine","Toothpaste","Perfume",NA,NA,NA,NA,NA,NA
+"9","Analgesics","Magazine",NA,NA,NA,NA,NA,NA,NA
+"10","Magazine","Pencils","Candy","Postcard",NA,NA,NA,NA,NA
+"11","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"12","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"13","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"14","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"15","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"16","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"17","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"18","Magazine","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"19","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"20","Magazine","Flash cards ",NA,NA,NA,NA,NA,NA,NA
+"21","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"22","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"23","Magazine","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"24","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"25","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"26","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"27","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"28","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"29","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA,NA
+"30","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"31","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"32","Magazine","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA
+"33","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"34","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"35","Set of pens ",NA,NA,NA,NA,NA,NA,NA,NA
+"36","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"37","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"38","Packaging paper ",NA,NA,NA,NA,NA,NA,NA,NA
+"39","Magazine","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"40","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"41","Pencils","Postcard",NA,NA,NA,NA,NA,NA,NA
+"42","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"43","Prescription medicines",NA,NA,NA,NA,NA,NA,NA,NA
+"44","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"45","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"46","Pencils","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"47","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"48","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"49","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"50","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"51","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"52","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"53","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"54","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"55","Magazine","Candy",NA,NA,NA,NA,NA,NA,NA
+"56","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"57","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"58","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"59","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"60","Magazine","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"61","Magazine","Flash cards cards","Perfume",NA,NA,NA,NA,NA,NA
+"62","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"63","Magazine","Lek","Perfume","Shampoo",NA,NA,NA,NA,NA
+"64","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"65","Magazine","Candy",NA,NA,NA,NA,NA,NA,NA
+"66","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"67","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"68","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"69","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"70","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"71","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"72","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"73","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"74","Magazine","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"75","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"76","Soap","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"77","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"78","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"79","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"80","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"81","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"82","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"83","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"84","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"85","Candy","Postcard",NA,NA,NA,NA,NA,NA,NA
+"86","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"87","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"88","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"89","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"90","Deodorant",NA,NA,NA,NA,NA,NA,NA,NA
+"91","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"92","Pens",NA,NA,NA,NA,NA,NA,NA,NA
+"93","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"94","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"95","Candy","Postcard",NA,NA,NA,NA,NA,NA,NA
+"96","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"97","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"98","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"99","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"100","Deodorant",NA,NA,NA,NA,NA,NA,NA,NA
+"101","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"102","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"103","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"104","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"105","Toothbrush","Flash cards","Candy","Lek",NA,NA,NA,NA,NA
+"106","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"107","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"108","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"109","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"110","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"111","Prescription medicines",NA,NA,NA,NA,NA,NA,NA,NA
+"112","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"113","Toothpaste","Pencils","Candy","Postcard",NA,NA,NA,NA,NA
+"114","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"115","Pencils","Postcard",NA,NA,NA,NA,NA,NA,NA
+"116","Magazine","Pencils","Postcard",NA,NA,NA,NA,NA,NA
+"117","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"118","Magazine","Toothbrush","Lek",NA,NA,NA,NA,NA,NA
+"119","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"120","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"121","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"122","Magazine","Candy",NA,NA,NA,NA,NA,NA,NA
+"123","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"124","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"125","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"126","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"127","Candy","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"128","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"129","Magazine","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"130","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"131","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"132","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"133","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"134","Toothbrush","Lek",NA,NA,NA,NA,NA,NA,NA
+"135","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"136","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"137","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"138","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"139","Magazine","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA
+"140","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"141","Pencils","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"142","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"143","Lek","Packaging paper",NA,NA,NA,NA,NA,NA,NA
+"144","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"145","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"146","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"147","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"148","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"149","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"150","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"151","Toothpaste","Candy","Set of pens",NA,NA,NA,NA,NA,NA
+"152","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"153","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"154","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA,NA
+"155","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"156","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"157","Magazine","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA
+"158","Magazine","Perfume",NA,NA,NA,NA,NA,NA,NA
+"159","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"160","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"161","Toothbrush","Perfume",NA,NA,NA,NA,NA,NA,NA
+"162","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"163","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"164","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"165","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"166","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"167","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"168","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"169","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"170","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"171","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"172","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"173","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"174","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"175","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"176","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"177","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"178","Candy","Postcard",NA,NA,NA,NA,NA,NA,NA
+"179","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"180","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"181","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"182","Flash cards","Candy","Set of pens","Perfume","Postcard",NA,NA,NA,NA
+"183","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"184","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"185","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"186","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"187","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"188","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"189","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"190","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"191","Magazine","Candy","Set of pens","Postcard",NA,NA,NA,NA,NA
+"192","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"193","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"194","Analgesics","Toothpaste","Toothbrush","Candy",NA,NA,NA,NA,NA
+"195","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"196","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"197","Magazine","Pencils","Postcard",NA,NA,NA,NA,NA,NA
+"198","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"199","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"200","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"201","Toothpaste","Soap",NA,NA,NA,NA,NA,NA,NA
+"202","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"203","Magazine","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"204","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"205","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"206","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"207","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"208","Magazine","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"209","Magazine","Flash cards",NA,NA,NA,NA,NA,NA,NA
+"210","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"211","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"212","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"213","Magazine","Toothpaste","Candy",NA,NA,NA,NA,NA,NA
+"214","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"215","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"216","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"217","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"218","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"219","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"220","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"221","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"222","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"223","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"224","Magazine","Toothpaste","Pencils","Candy","Packaging paper",NA,NA,NA,NA
+"225","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"226","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"227","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"228","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"229","Magazine","Pencils","Postcard",NA,NA,NA,NA,NA,NA
+"230","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"231","Magazine","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA
+"232","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"233","Magazine","Toothpaste","Pencils","Candy","Postcard",NA,NA,NA,NA
+"234","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"235","Pencils","Postcard",NA,NA,NA,NA,NA,NA,NA
+"236","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"237","Pencils","Set of pens","Postcard",NA,NA,NA,NA,NA,NA
+"238","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"239","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"240","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"241","Toothpaste","Flash cards",NA,NA,NA,NA,NA,NA,NA
+"242","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"243","Magazine","Flash cards","Postcard",NA,NA,NA,NA,NA,NA
+"244","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"245","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"246","Magazine","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"247","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"248","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"249","Pens",NA,NA,NA,NA,NA,NA,NA,NA
+"250","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"251","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"252","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"253","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"254","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"255","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"256","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"257","Magazine","Flash cards","Set of pens",NA,NA,NA,NA,NA,NA
+"258","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"259","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"260","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"261","Toothpaste","Flash cards",NA,NA,NA,NA,NA,NA,NA
+"262","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"263","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"264","Candy","Perfume",NA,NA,NA,NA,NA,NA,NA
+"265","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"266","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"267","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"268","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"269","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"270","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"271","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"272","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"273","Magazine","Candy",NA,NA,NA,NA,NA,NA,NA
+"274","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"275","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA,NA
+"276","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"277","Toothpaste","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"278","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"279","Magazine","Pencils","Postcard",NA,NA,NA,NA,NA,NA
+"280","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"281","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"282","Magazine","Postcard",NA,NA,NA,NA,NA,NA,NA
+"283","Magazine","Pencils","Candy",NA,NA,NA,NA,NA,NA
+"284","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"285","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"286","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"287","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA,NA
+"288","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA,NA
+"289","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"290","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"291","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"292","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"293","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"294","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"295","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"296","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"297","Magazine","Candy",NA,NA,NA,NA,NA,NA,NA
+"298","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"299","Magazine","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"300","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"301","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"302","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"303","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"304","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"305","Magazine","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"306","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"307","Magazine","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"308","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"309","Magazine","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"310","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"311","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"312","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"313","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"314","Magazine","Pencils","Candy",NA,NA,NA,NA,NA,NA
+"315","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"316","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"317","Toothbrush","Perfume",NA,NA,NA,NA,NA,NA,NA
+"318","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"319","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"320","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"321","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"322","Magazine","Lek",NA,NA,NA,NA,NA,NA,NA
+"323","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"324","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"325","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"326","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"327","Candy","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"328","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"329","Toothbrush","Pencils","Prescription medicines","Packaging paper","Perfume",NA,NA,NA,NA
+"330","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"331","Toothbrush","Lek","Perfume",NA,NA,NA,NA,NA,NA
+"332","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"333","Toothpaste","Candy","Soap","Set of pens",NA,NA,NA,NA,NA
+"334","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"335","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"336","Magazine","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"337","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"338","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"339","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"340","Pens",NA,NA,NA,NA,NA,NA,NA,NA
+"341","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"342","Toothbrush","Lek","Perfume",NA,NA,NA,NA,NA,NA
+"343","Toothbrush","Perfume",NA,NA,NA,NA,NA,NA,NA
+"344","Pencils","Postcard",NA,NA,NA,NA,NA,NA,NA
+"345","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA,NA
+"346","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"347","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"348","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"349","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"350","Candy","Postcard",NA,NA,NA,NA,NA,NA,NA
+"351","Magazine","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"352","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"353","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"354","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"355","Pencils","Packaging paper","Postcard",NA,NA,NA,NA,NA,NA
+"356","Magazine","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"357","Magazine","Toothpaste","Flash cards",NA,NA,NA,NA,NA,NA
+"358","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"359","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"360","Packaging paper","Perfume",NA,NA,NA,NA,NA,NA,NA
+"361","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"362","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"363","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA,NA
+"364","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"365","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"366","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"367","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"368","Pencils","Postcard",NA,NA,NA,NA,NA,NA,NA
+"369","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"370","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"371","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"372","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"373","Candy","Postcard",NA,NA,NA,NA,NA,NA,NA
+"374","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"375","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"376","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"377","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"378","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"379","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"380","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"381","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"382","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"383","Deodorant",NA,NA,NA,NA,NA,NA,NA,NA
+"384","Deodorant","Magazine","Toothpaste","Pencils","Candy","Lek","Set of pens","Postcard","Shampoo"
+"385","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"386","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"387","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"388","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"389","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"390","Magazine","Flash cards","Candy","Postcard",NA,NA,NA,NA,NA
+"391","Magazine","Toothpaste","Candy",NA,NA,NA,NA,NA,NA
+"392","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"393","Magazine","Pens",NA,NA,NA,NA,NA,NA,NA
+"394","Pens",NA,NA,NA,NA,NA,NA,NA,NA
+"395","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA,NA
+"396","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"397","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"398","Magazine","Pencils",NA,NA,NA,NA,NA,NA,NA
+"399","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"400","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"401","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"402","Pencils","Postcard",NA,NA,NA,NA,NA,NA,NA
+"403","Magazine","Pencils","Postcard",NA,NA,NA,NA,NA,NA
+"404","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"405","Lek","Perfume",NA,NA,NA,NA,NA,NA,NA
+"406","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"407","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"408","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"409","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"410","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"411","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"412","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"413","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"414","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"415","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"416","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"417","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"418","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"419","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"420","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"421","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"422","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"423","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"424","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"425","Magazine","Lek",NA,NA,NA,NA,NA,NA,NA
+"426","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"427","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"428","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"429","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"430","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"431","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"432","Toothpaste","Packaging paper",NA,NA,NA,NA,NA,NA,NA
+"433","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"434","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"435","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"436","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"437","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"438","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"439","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"440","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"441","Toothbrush","Soap",NA,NA,NA,NA,NA,NA,NA
+"442","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"443","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"444","Magazine","Shampoo",NA,NA,NA,NA,NA,NA,NA
+"445","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"446","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"447","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"448","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"449","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"450","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"451","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"452","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"453","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"454","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"455","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"456","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"457","Deodorant",NA,NA,NA,NA,NA,NA,NA,NA
+"458","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"459","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"460","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"461","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"462","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"463","Magazine","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"464","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"465","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"466","Magazine","Flash cards",NA,NA,NA,NA,NA,NA,NA
+"467","Magazine","Pencils","Postcard",NA,NA,NA,NA,NA,NA
+"468","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"469","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"470","Candy","Postcard",NA,NA,NA,NA,NA,NA,NA
+"471","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"472","Magazine","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA
+"473","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"474","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"475","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"476","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"477","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"478","Candy","Postcard",NA,NA,NA,NA,NA,NA,NA
+"479","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"480","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"481","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"482","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"483","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA,NA
+"484","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"485","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"486","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"487","Pencils","Postcard",NA,NA,NA,NA,NA,NA,NA
+"488","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"489","Pencils","Postcard",NA,NA,NA,NA,NA,NA,NA
+"490","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"491","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"492","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"493","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"494","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"495","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"496","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"497","Magazine","Pencils","Candy",NA,NA,NA,NA,NA,NA
+"498","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"499","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"500","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"501","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"502","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"503","Soap","Packaging paper",NA,NA,NA,NA,NA,NA,NA
+"504","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"505","Toothpaste","Candy","Lek","Postcard","Shampoo",NA,NA,NA,NA
+"506","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"507","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA,NA
+"508","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"509","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"510","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"511","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"512","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"513","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"514","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"515","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"516","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"517","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"518","Magazine","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"519","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"520","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"521","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"522","Set of pens","Perfume",NA,NA,NA,NA,NA,NA,NA
+"523","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"524","Toothbrush","Perfume","Shampoo",NA,NA,NA,NA,NA,NA
+"525","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"526","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"527","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"528","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"529","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"530","Toothpaste","Pencils","Candy","Postcard",NA,NA,NA,NA,NA
+"531","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA,NA
+"532","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"533","Toothbrush","Perfume",NA,NA,NA,NA,NA,NA,NA
+"534","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"535","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"536","Magazine","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"537","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"538","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"539","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"540","Deodorant",NA,NA,NA,NA,NA,NA,NA,NA
+"541","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"542","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"543","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"544","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"545","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"546","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"547","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"548","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"549","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"550","Toothpaste","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"551","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"552","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"553","Magazine","Perfume",NA,NA,NA,NA,NA,NA,NA
+"554","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"555","Candy","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"556","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"557","Toothbrush","Lek","Perfume",NA,NA,NA,NA,NA,NA
+"558","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"559","Toothpaste","Candy","Set of pens",NA,NA,NA,NA,NA,NA
+"560","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"561","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"562","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"563","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"564","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"565","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"566","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"567","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"568","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"569","Prescription medicines",NA,NA,NA,NA,NA,NA,NA,NA
+"570","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"571","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"572","Pens",NA,NA,NA,NA,NA,NA,NA,NA
+"573","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"574","Pencils","Postcard",NA,NA,NA,NA,NA,NA,NA
+"575","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"576","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"577","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"578","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"579","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"580","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"581","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"582","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"583","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"584","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"585","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"586","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"587","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"588","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"589","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"590","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"591","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"592","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"593","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"594","Toothbrush","Perfume",NA,NA,NA,NA,NA,NA,NA
+"595","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"596","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"597","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"598","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"599","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"600","Magazine","Toothbrush","Pencils","Flash cards","Candy",NA,NA,NA,NA
+"601","Magazine","Toothpaste","Candy",NA,NA,NA,NA,NA,NA
+"602","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"603","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"604","Magazine","Candy",NA,NA,NA,NA,NA,NA,NA
+"605","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"606","Magazine","Toothpaste","Candy","Set of pens","Shampoo",NA,NA,NA,NA
+"607","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"608","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"609","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"610","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"611","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"612","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"613","Toothbrush","Pens",NA,NA,NA,NA,NA,NA,NA
+"614","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"615","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"616","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"617","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"618","Magazine","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"619","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"620","Pencils","Postcard",NA,NA,NA,NA,NA,NA,NA
+"621","Pencils","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"622","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"623","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA,NA
+"624","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"625","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"626","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"627","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"628","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA,NA
+"629","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"630","Magazine","Toothpaste","Candy",NA,NA,NA,NA,NA,NA
+"631","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"632","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"633","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"634","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"635","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"636","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"637","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"638","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"639","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"640","Toothpaste","Flash cards",NA,NA,NA,NA,NA,NA,NA
+"641","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"642","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"643","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"644","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"645","Magazine","Toothbrush","Lek","Set of pens","Perfume","Shampoo",NA,NA,NA
+"646","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"647","Magazine","Flash cards","Postcard",NA,NA,NA,NA,NA,NA
+"648","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"649","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"650","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"651","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"652","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"653","Magazine","Toothpaste","Candy",NA,NA,NA,NA,NA,NA
+"654","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"655","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"656","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"657","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"658","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"659","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"660","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"661","Magazine","Pencils",NA,NA,NA,NA,NA,NA,NA
+"662","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"663","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"664","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"665","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"666","Magazine","Pencils","Candy","Postcard",NA,NA,NA,NA,NA
+"667","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"668","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"669","Toothpaste","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"670","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"671","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA,NA
+"672","Magazine","Flash cards",NA,NA,NA,NA,NA,NA,NA
+"673","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"674","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"675","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"676","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"677","Magazine","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"678","Magazine","Perfume",NA,NA,NA,NA,NA,NA,NA
+"679","Lek","Perfume","Shampoo",NA,NA,NA,NA,NA,NA
+"680","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"681","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"682","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"683","Toothpaste","Shampoo",NA,NA,NA,NA,NA,NA,NA
+"684","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"685","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"686","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"687","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"688","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"689","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"690","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"691","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"692","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"693","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"694","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"695","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"696","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"697","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"698","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"699","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"700","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"701","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA,NA
+"702","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"703","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"704","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"705","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"706","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"707","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"708","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"709","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"710","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"711","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"712","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"713","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"714","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"715","Prescription medicines",NA,NA,NA,NA,NA,NA,NA,NA
+"716","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"717","Candy","Postcard",NA,NA,NA,NA,NA,NA,NA
+"718","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"719","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"720","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"721","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"722","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"723","Magazine","Pencils",NA,NA,NA,NA,NA,NA,NA
+"724","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"725","Magazine","Candy","Set of pens","Postcard",NA,NA,NA,NA,NA
+"726","Magazine","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"727","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"728","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"729","Magazine","Pencils","Candy",NA,NA,NA,NA,NA,NA
+"730","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"731","Magazine","Perfume",NA,NA,NA,NA,NA,NA,NA
+"732","Magazine","Pens",NA,NA,NA,NA,NA,NA,NA
+"733","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"734","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"735","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"736","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"737","Magazine","Postcard",NA,NA,NA,NA,NA,NA,NA
+"738","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"739","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"740","Toothpaste","Pencils","Candy",NA,NA,NA,NA,NA,NA
+"741","Toothpaste","Pencils","Candy",NA,NA,NA,NA,NA,NA
+"742","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"743","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"744","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"745","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"746","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"747","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"748","Magazine","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"749","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"750","Toothpaste","Lek",NA,NA,NA,NA,NA,NA,NA
+"751","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"752","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"753","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"754","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"755","Magazine","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA
+"756","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"757","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"758","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"759","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"760","Candy","Packaging paper",NA,NA,NA,NA,NA,NA,NA
+"761","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"762","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"763","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"764","Candy","Postcard",NA,NA,NA,NA,NA,NA,NA
+"765","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"766","Toothbrush","Perfume",NA,NA,NA,NA,NA,NA,NA
+"767","Magazine","Pencils","Postcard",NA,NA,NA,NA,NA,NA
+"768","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"769","Prescription medicines","Packaging paper",NA,NA,NA,NA,NA,NA,NA
+"770","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"771","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"772","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"773","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"774","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"775","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"776","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"777","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"778","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"779","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"780","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"781","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"782","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"783","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"784","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"785","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"786","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"787","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"788","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"789","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"790","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"791","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA,NA
+"792","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"793","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"794","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"795","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"796","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"797","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"798","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"799","Pencils","Postcard",NA,NA,NA,NA,NA,NA,NA
+"800","Pens",NA,NA,NA,NA,NA,NA,NA,NA
+"801","Pencils","Postcard",NA,NA,NA,NA,NA,NA,NA
+"802","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"803","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"804","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"805","Pens",NA,NA,NA,NA,NA,NA,NA,NA
+"806","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"807","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"808","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"809","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"810","Magazine","Pencils",NA,NA,NA,NA,NA,NA,NA
+"811","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"812","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"813","Magazine","Candy","Perfume",NA,NA,NA,NA,NA,NA
+"814","Pencils","Flash cards",NA,NA,NA,NA,NA,NA,NA
+"815","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"816","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"817","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"818","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"819","Magazine","Lek","Set of pens","Postcard",NA,NA,NA,NA,NA
+"820","Toothbrush","Lek",NA,NA,NA,NA,NA,NA,NA
+"821","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"822","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"823","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"824","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"825","Magazine","Soap","Set of pens",NA,NA,NA,NA,NA,NA
+"826","Magazine","Toothpaste","Candy",NA,NA,NA,NA,NA,NA
+"827","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"828","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"829","Toothpaste","Candy","Set of pens",NA,NA,NA,NA,NA,NA
+"830","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"831","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"832","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"833","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"834","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"835","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"836","Candy","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"837","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"838","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"839","Magazine","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"840","Toothpaste","Perfume","Shampoo",NA,NA,NA,NA,NA,NA
+"841","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"842","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"843","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"844","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"845","Magazine","Postcard",NA,NA,NA,NA,NA,NA,NA
+"846","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"847","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"848","Magazine","Pencils",NA,NA,NA,NA,NA,NA,NA
+"849","Lek","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"850","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"851","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"852","Soap","Perfume",NA,NA,NA,NA,NA,NA,NA
+"853","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"854","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"855","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"856","Candy","Postcard",NA,NA,NA,NA,NA,NA,NA
+"857","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"858","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"859","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"860","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"861","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"862","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"863","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"864","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA,NA
+"865","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"866","Toothbrush","Perfume",NA,NA,NA,NA,NA,NA,NA
+"867","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"868","Magazine","Pencils","Postcard",NA,NA,NA,NA,NA,NA
+"869","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"870","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"871","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"872","Lek","Soap",NA,NA,NA,NA,NA,NA,NA
+"873","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"874","Magazine","Flash cards","Set of pens",NA,NA,NA,NA,NA,NA
+"875","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"876","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"877","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"878","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"879","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"880","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"881","Magazine","Flash cards",NA,NA,NA,NA,NA,NA,NA
+"882","Flash cards","Candy","Lek","Set of pens",NA,NA,NA,NA,NA
+"883","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"884","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"885","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"886","Magazine","Pencils","Postcard",NA,NA,NA,NA,NA,NA
+"887","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"888","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"889","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"890","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"891","Magazine","Perfume",NA,NA,NA,NA,NA,NA,NA
+"892","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"893","Candy","Postcard",NA,NA,NA,NA,NA,NA,NA
+"894","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"895","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"896","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"897","Toothbrush","Soap","Set of pens",NA,NA,NA,NA,NA,NA
+"898","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"899","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"900","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"901","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"902","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"903","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"904","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"905","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"906","Magazine","Pencils",NA,NA,NA,NA,NA,NA,NA
+"907","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"908","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"909","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"910","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"911","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"912","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"913","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"914","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"915","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"916","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"917","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"918","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"919","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"920","Magazine","Postcard",NA,NA,NA,NA,NA,NA,NA
+"921","Analgesics","Magazine","Toothbrush","Lek","Shampoo",NA,NA,NA,NA
+"922","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"923","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"924","Toothpaste","Pencils","Candy","Postcard",NA,NA,NA,NA,NA
+"925","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"926","Magazine","Flash cards",NA,NA,NA,NA,NA,NA,NA
+"927","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"928","Magazine","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"929","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"930","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"931","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"932","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"933","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"934","Toothbrush","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"935","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"936","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"937","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"938","Magazine","Pencils","Candy",NA,NA,NA,NA,NA,NA
+"939","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"940","Magazine","Candy",NA,NA,NA,NA,NA,NA,NA
+"941","Magazine","Pencils","Candy","Postcard",NA,NA,NA,NA,NA
+"942","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"943","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"944","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"945","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"946","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"947","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA,NA
+"948","Toothpaste","Toothbrush","Set of pens",NA,NA,NA,NA,NA,NA
+"949","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"950","Candy","Postcard",NA,NA,NA,NA,NA,NA,NA
+"951","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"952","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"953","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"954","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"955","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"956","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"957","Toothpaste","Candy","Lek",NA,NA,NA,NA,NA,NA
+"958","Flash cards","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"959","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"960","Prescription medicines",NA,NA,NA,NA,NA,NA,NA,NA
+"961","Magazine","Toothpaste","Toothbrush","Perfume",NA,NA,NA,NA,NA
+"962","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"963","Magazine","Toothpaste","Pencils","Candy","Set of pens","Postcard",NA,NA,NA
+"964","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"965","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"966","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"967","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"968","Magazine","Pencils","Candy","Postcard",NA,NA,NA,NA,NA
+"969","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"970","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"971","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"972","Magazine","Candy",NA,NA,NA,NA,NA,NA,NA
+"973","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"974","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"975","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"976","Magazine","Candy","Set of pens","Postcard",NA,NA,NA,NA,NA
+"977","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"978","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"979","Magazine","Pencils","Postcard",NA,NA,NA,NA,NA,NA
+"980","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"981","Magazine","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"982","Prescription medicines","Packaging paper",NA,NA,NA,NA,NA,NA,NA
+"983","Magazine","Toothbrush","Perfume",NA,NA,NA,NA,NA,NA
+"984","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"985","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"986","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"987","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"988","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"989","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"990","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"991","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"992","Prescription medicines",NA,NA,NA,NA,NA,NA,NA,NA
+"993","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"994","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA,NA
+"995","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"996","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"997","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"998","Toothpaste","Shampoo",NA,NA,NA,NA,NA,NA,NA
+"999","Candy","Packaging paper",NA,NA,NA,NA,NA,NA,NA
+"1000","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1001","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1002","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1003","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1004","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1005","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1006","Toothpaste","Toothbrush","Postcard","Shampoo",NA,NA,NA,NA,NA
+"1007","Toothpaste","Flash cards","Packaging paper",NA,NA,NA,NA,NA,NA
+"1008","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1009","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1010","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1011","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1012","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"1013","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1014","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1015","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1016","Magazine","Toothpaste","Pencils","Candy",NA,NA,NA,NA,NA
+"1017","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1018","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"1019","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1020","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1021","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1022","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"1023","Deodorant",NA,NA,NA,NA,NA,NA,NA,NA
+"1024","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1025","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1026","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1027","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"1028","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"1029","Lek","Perfume",NA,NA,NA,NA,NA,NA,NA
+"1030","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1031","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1032","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"1033","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1034","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1035","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1036","Magazine","Flash cards",NA,NA,NA,NA,NA,NA,NA
+"1037","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1038","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1039","Toothbrush","Pencils","Postcard",NA,NA,NA,NA,NA,NA
+"1040","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA,NA
+"1041","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1042","Magazine","Flash cards",NA,NA,NA,NA,NA,NA,NA
+"1043","Magazine","Toothpaste","Flash cards","Candy",NA,NA,NA,NA,NA
+"1044","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1045","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1046","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"1047","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1048","Magazine","Perfume",NA,NA,NA,NA,NA,NA,NA
+"1049","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1050","Toothbrush","Lek","Soap",NA,NA,NA,NA,NA,NA
+"1051","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1052","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1053","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1054","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1055","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1056","Magazine","Postcard",NA,NA,NA,NA,NA,NA,NA
+"1057","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"1058","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1059","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1060","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1061","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1062","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1063","Pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1064","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1065","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1066","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1067","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1068","Magazine","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"1069","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1070","Magazine","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"1071","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1072","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1073","Pencils","Postcard",NA,NA,NA,NA,NA,NA,NA
+"1074","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"1075","Magazine","Toothpaste","Pencils","Postcard",NA,NA,NA,NA,NA
+"1076","Magazine","Candy",NA,NA,NA,NA,NA,NA,NA
+"1077","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1078","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1079","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1080","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1081","Toothpaste","Pencils","Candy","Set of pens","Perfume",NA,NA,NA,NA
+"1082","Pencils","Postcard",NA,NA,NA,NA,NA,NA,NA
+"1083","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1084","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1085","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1086","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"1087","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"1088","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1089","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1090","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"1091","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1092","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1093","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1094","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1095","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1096","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1097","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1098","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1099","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1100","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1101","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1102","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1103","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1104","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"1105","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1106","Magazine","Toothpaste","Candy","Perfume","Postcard",NA,NA,NA,NA
+"1107","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1108","Toothbrush","Lek","Soap",NA,NA,NA,NA,NA,NA
+"1109","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1110","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1111","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1112","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1113","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1114","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1115","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"1116","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA,NA
+"1117","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1118","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1119","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1120","Toothbrush","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"1121","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1122","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1123","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1124","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1125","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1126","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1127","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"1128","Candy","Postcard",NA,NA,NA,NA,NA,NA,NA
+"1129","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1130","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1131","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"1132","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1133","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1134","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1135","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1136","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"1137","Toothpaste","Toothbrush","Packaging paper","Shampoo",NA,NA,NA,NA,NA
+"1138","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA,NA
+"1139","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1140","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1141","Set of pens","Perfume",NA,NA,NA,NA,NA,NA,NA
+"1142","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1143","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1144","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1145","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1146","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1147","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1148","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1149","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1150","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1151","Magazine","Flash cards",NA,NA,NA,NA,NA,NA,NA
+"1152","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1153","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1154","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"1155","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1156","Toothpaste","Toothbrush","Lek","Shampoo",NA,NA,NA,NA,NA
+"1157","Magazine","Pencils","Set of pens","Postcard",NA,NA,NA,NA,NA
+"1158","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"1159","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1160","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1161","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1162","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"1163","Magazine","Pencils","Postcard",NA,NA,NA,NA,NA,NA
+"1164","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1165","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"1166","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA,NA
+"1167","Prescription medicines",NA,NA,NA,NA,NA,NA,NA,NA
+"1168","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1169","Toothpaste","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"1170","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1171","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1172","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1173","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1174","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1175","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"1176","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1177","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1178","Flash cards","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"1179","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1180","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1181","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1182","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1183","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1184","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1185","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1186","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1187","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1188","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1189","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1190","Prescription medicines",NA,NA,NA,NA,NA,NA,NA,NA
+"1191","Pencils","Postcard",NA,NA,NA,NA,NA,NA,NA
+"1192","Lek","Packaging paper",NA,NA,NA,NA,NA,NA,NA
+"1193","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1194","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1195","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1196","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA,NA
+"1197","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1198","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1199","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1200","Pencils","Lek",NA,NA,NA,NA,NA,NA,NA
+"1201","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1202","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1203","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"1204","Magazine","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"1205","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1206","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1207","Candy","Postcard",NA,NA,NA,NA,NA,NA,NA
+"1208","Candy","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"1209","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1210","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1211","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1212","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1213","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1214","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1215","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1216","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1217","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1218","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1219","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1220","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1221","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1222","Toothbrush","Perfume",NA,NA,NA,NA,NA,NA,NA
+"1223","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1224","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1225","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"1226","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1227","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1228","Magazine","Flash cards","Perfume",NA,NA,NA,NA,NA,NA
+"1229","Toothpaste","Toothbrush","Postcard",NA,NA,NA,NA,NA,NA
+"1230","Magazine","Pencils",NA,NA,NA,NA,NA,NA,NA
+"1231","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1232","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1233","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1234","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1235","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1236","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1237","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1238","Candy","Postcard",NA,NA,NA,NA,NA,NA,NA
+"1239","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"1240","Toothbrush","Perfume",NA,NA,NA,NA,NA,NA,NA
+"1241","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1242","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1243","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1244","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"1245","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1246","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1247","Flash cards","Prescription medicines","Packaging paper",NA,NA,NA,NA,NA,NA
+"1248","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"1249","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1250","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1251","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1252","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1253","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1254","Packaging paper","Perfume",NA,NA,NA,NA,NA,NA,NA
+"1255","Pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1256","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1257","Analgesics",NA,NA,NA,NA,NA,NA,NA,NA
+"1258","Magazine","Candy",NA,NA,NA,NA,NA,NA,NA
+"1259","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1260","Magazine","Toothpaste","Packaging paper",NA,NA,NA,NA,NA,NA
+"1261","Toothpaste","Pens",NA,NA,NA,NA,NA,NA,NA
+"1262","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA,NA
+"1263","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1264","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1265","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1266","Pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1267","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1268","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA,NA
+"1269","Toothpaste","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"1270","Toothpaste","Pencils","Postcard",NA,NA,NA,NA,NA,NA
+"1271","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1272","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"1273","Toothbrush","Perfume",NA,NA,NA,NA,NA,NA,NA
+"1274","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"1275","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1276","Pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1277","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1278","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1279","Pencils","Packaging paper",NA,NA,NA,NA,NA,NA,NA
+"1280","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1281","Prescription medicines",NA,NA,NA,NA,NA,NA,NA,NA
+"1282","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1283","Magazine","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA
+"1284","Magazine","Toothpaste","Candy","Postcard",NA,NA,NA,NA,NA
+"1285","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1286","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1287","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1288","Magazine","Flash cards",NA,NA,NA,NA,NA,NA,NA
+"1289","Pencils","Flash cards","Postcard",NA,NA,NA,NA,NA,NA
+"1290","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1291","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1292","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1293","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1294","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1295","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1296","Toothbrush","Lek","Perfume",NA,NA,NA,NA,NA,NA
+"1297","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"1298","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1299","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1300","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1301","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"1302","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1303","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1304","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1305","Toothbrush","Perfume",NA,NA,NA,NA,NA,NA,NA
+"1306","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"1307","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1308","Magazine","Toothpaste","Toothbrush",NA,NA,NA,NA,NA,NA
+"1309","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"1310","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1311","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1312","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1313","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1314","Magazine","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"1315","Magazine","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"1316","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1317","Toothpaste","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"1318","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1319","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"1320","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1321","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1322","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1323","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1324","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1325","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1326","Magazine","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA
+"1327","Magazine","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"1328","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1329","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1330","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1331","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"1332","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1333","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1334","Magazine","Flash cards","Candy","Postcard",NA,NA,NA,NA,NA
+"1335","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"1336","Pencils","Soap",NA,NA,NA,NA,NA,NA,NA
+"1337","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1338","Magazine","Candy",NA,NA,NA,NA,NA,NA,NA
+"1339","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1340","Toothbrush","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"1341","Magazine","Toothpaste","Candy",NA,NA,NA,NA,NA,NA
+"1342","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1343","Toothbrush","Lek","Set of pens",NA,NA,NA,NA,NA,NA
+"1344","Packaging paper","Perfume",NA,NA,NA,NA,NA,NA,NA
+"1345","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1346","Magazine","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA
+"1347","Magazine","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA
+"1348","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1349","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1350","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1351","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1352","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1353","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1354","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1355","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1356","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1357","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1358","Toothbrush","Lek",NA,NA,NA,NA,NA,NA,NA
+"1359","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1360","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"1361","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1362","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1363","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1364","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"1365","Magazine","Postcard",NA,NA,NA,NA,NA,NA,NA
+"1366","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1367","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1368","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1369","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"1370","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1371","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1372","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1373","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1374","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1375","Toothpaste","Pencils",NA,NA,NA,NA,NA,NA,NA
+"1376","Magazine","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"1377","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1378","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1379","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1380","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1381","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1382","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1383","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"1384","Magazine","Candy","Postcard",NA,NA,NA,NA,NA,NA
+"1385","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1386","Magazine","Toothbrush","Perfume",NA,NA,NA,NA,NA,NA
+"1387","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1388","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1389","Magazine",NA,NA,NA,NA,NA,NA,NA,NA
+"1390","Magazine","Toothpaste","Postcard",NA,NA,NA,NA,NA,NA
+"1391","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1392","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1393","Magazine","Postcard",NA,NA,NA,NA,NA,NA,NA
+"1394","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"1395","Postcard",NA,NA,NA,NA,NA,NA,NA,NA
+"1396","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1397","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1398","Toothpaste","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"1399","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1400","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1401","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1402","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1403","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1404","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1405","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1406","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1407","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1408","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1409","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1410","Greeting card",NA,NA,NA,NA,NA,NA,NA,NA
+"1411","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1412","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1413","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1414","Journal","Candy","Greeting card",NA,NA,NA,NA,NA,NA
+"1415","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1416","Greeting card",NA,NA,NA,NA,NA,NA,NA,NA
+"1417","Pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1418","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1419","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1420","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1421","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1422","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1423","Toothbrush","Pencils","Candy","Greeting card",NA,NA,NA,NA,NA
+"1424","Journal","Toothpaste","Candy",NA,NA,NA,NA,NA,NA
+"1425","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1426","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1427","Pencils","Perfume",NA,NA,NA,NA,NA,NA,NA
+"1428","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1429","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1430","Journal","Candy","Greeting card",NA,NA,NA,NA,NA,NA
+"1431","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1432","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"1433","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1434","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1435","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"1436","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1437","Journal","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"1438","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1439","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"1440","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1441","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"1442","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"1443","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1444","Toothpaste","Candy",NA,NA,NA,NA,NA,NA,NA
+"1445","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"1446","Toothbrush","Perfume","Shampoo",NA,NA,NA,NA,NA,NA
+"1447","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1448","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1449","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1450","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"1451","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1452","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1453","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1454","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1455","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1456","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1457","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1458","Journal","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"1459","Analgesic",NA,NA,NA,NA,NA,NA,NA,NA
+"1460","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1461","Toothbrush","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"1462","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1463","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1464","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1465","Greeting card",NA,NA,NA,NA,NA,NA,NA,NA
+"1466","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1467","Journal","Packaging paper",NA,NA,NA,NA,NA,NA,NA
+"1468","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1469","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1470","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1471","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1472","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1473","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1474","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1475","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1476","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1477","Lek","Perfume",NA,NA,NA,NA,NA,NA,NA
+"1478","Candy","Greeting card ",NA,NA,NA,NA,NA,NA,NA
+"1479","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1480","Toothpaste","Greeting card",NA,NA,NA,NA,NA,NA,NA
+"1481","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1482","Toothpaste","Flash cards","Candy",NA,NA,NA,NA,NA,NA
+"1483","Journal","Toothpaste","Greeting card",NA,NA,NA,NA,NA,NA
+"1484","Greeting card",NA,NA,NA,NA,NA,NA,NA,NA
+"1485","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1486","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1487","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1488","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1489","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1490","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1491","Prescription medicines","Packaging paper","Perfume","Shampoo",NA,NA,NA,NA,NA
+"1492","Journal","Toothpaste","Toothbrush","Candy",NA,NA,NA,NA,NA
+"1493","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1494","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1495","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1496","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1497","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1498","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1499","Flash cards","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"1500","Greeting card",NA,NA,NA,NA,NA,NA,NA,NA
+"1501","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1502","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1503","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"1504","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1505","Candy","Greeting card",NA,NA,NA,NA,NA,NA,NA
+"1506","Shampoo",NA,NA,NA,NA,NA,NA,NA,NA
+"1507","Flash cards","Prescription medicines",NA,NA,NA,NA,NA,NA,NA
+"1508","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1509","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1510","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1511","Flash cards","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"1512","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1513","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1514","Toothpaste","Packaging paper",NA,NA,NA,NA,NA,NA,NA
+"1515","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"1516","Journal","Pencils","Greeting card",NA,NA,NA,NA,NA,NA
+"1517","Journal","Candy","Greeting card",NA,NA,NA,NA,NA,NA
+"1518","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1519","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1520","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1521","Journal","Greeting card",NA,NA,NA,NA,NA,NA,NA
+"1522","Toothbrush","Perfume","Shampoo",NA,NA,NA,NA,NA,NA
+"1523","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1524","Journal","Toothbrush","Soap",NA,NA,NA,NA,NA,NA
+"1525","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1526","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1527","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1528","Journal","Toothpaste","Pencils","Candy",NA,NA,NA,NA,NA
+"1529","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1530","Toothbrush","Set of pens",NA,NA,NA,NA,NA,NA,NA
+"1531","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1532","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1533","Toothpaste","Greeting card",NA,NA,NA,NA,NA,NA,NA
+"1534","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1535","Toothpaste","Packaging paper",NA,NA,NA,NA,NA,NA,NA
+"1536","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1537","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1538","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"1539","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"1540","Greeting card",NA,NA,NA,NA,NA,NA,NA,NA
+"1541","Journal","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"1542","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1543","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1544","Journal","Packaging paper",NA,NA,NA,NA,NA,NA,NA
+"1545","Journal","Toothpaste","Greeting card",NA,NA,NA,NA,NA,NA
+"1546","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1547","Toothbrush",NA,NA,NA,NA,NA,NA,NA,NA
+"1548","Journal","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"1549","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1550","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1551","Greeting card",NA,NA,NA,NA,NA,NA,NA,NA
+"1552","Greeting card",NA,NA,NA,NA,NA,NA,NA,NA
+"1553","Pencils","Greeting card",NA,NA,NA,NA,NA,NA,NA
+"1554","Candy","Greeting card",NA,NA,NA,NA,NA,NA,NA
+"1555","Greeting card",NA,NA,NA,NA,NA,NA,NA,NA
+"1556","Journal","Greeting card",NA,NA,NA,NA,NA,NA,NA
+"1557","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1558","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1559","Journal","Toothbrush","Perfume",NA,NA,NA,NA,NA,NA
+"1560","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1561","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1562","Journal","Toothpaste","Pencils","Candy","Greeting card",NA,NA,NA,NA
+"1563","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1564","Toothpaste","Pencils","Perfume",NA,NA,NA,NA,NA,NA
+"1565","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1566","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1567","Journal","Pencils",NA,NA,NA,NA,NA,NA,NA
+"1568","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1569","Toothpaste","Candy","Greeting card",NA,NA,NA,NA,NA,NA
+"1570","Greeting card",NA,NA,NA,NA,NA,NA,NA,NA
+"1571","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1572","Candy","Greeting card",NA,NA,NA,NA,NA,NA,NA
+"1573","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1574","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1575","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1576","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1577","Candy",NA,NA,NA,NA,NA,NA,NA,NA
+"1578","Journal","Candy",NA,NA,NA,NA,NA,NA,NA
+"1579","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1580","Pencils","Candy",NA,NA,NA,NA,NA,NA,NA
+"1581","Journal","Toothpaste","Greeting card",NA,NA,NA,NA,NA,NA
+"1582","Journal","Pencils","Set of pens",NA,NA,NA,NA,NA,NA
+"1583","Greeting card",NA,NA,NA,NA,NA,NA,NA,NA
+"1584","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1585","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1586","Toothpaste","Greeting card",NA,NA,NA,NA,NA,NA,NA
+"1587","Toothpaste",NA,NA,NA,NA,NA,NA,NA,NA
+"1588","Pencils",NA,NA,NA,NA,NA,NA,NA,NA
+"1589","Greeting card",NA,NA,NA,NA,NA,NA,NA,NA
+"1590","Toothpaste","Candy","Greeting card",NA,NA,NA,NA,NA,NA
+"1591","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1592","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1593","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1594","Journal","Toothpaste",NA,NA,NA,NA,NA,NA,NA
+"1595","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1596","Pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1597","Lek",NA,NA,NA,NA,NA,NA,NA,NA
+"1598","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1599","Journal","Flash cards",NA,NA,NA,NA,NA,NA,NA
+"1600","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1601","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1602","Set of pens",NA,NA,NA,NA,NA,NA,NA,NA
+"1603","Perfume",NA,NA,NA,NA,NA,NA,NA,NA
+"1604","Flash cards",NA,NA,NA,NA,NA,NA,NA,NA
+"1605","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1606","Journal","Toothbrush","Lek",NA,NA,NA,NA,NA,NA
+"1607","Journal",NA,NA,NA,NA,NA,NA,NA,NA
+"1608","Soap",NA,NA,NA,NA,NA,NA,NA,NA
+"1609","Packaging paper",NA,NA,NA,NA,NA,NA,NA,NA
+"1610","Journal",NA,NA,NA,NA,NA,NA,NA,NA

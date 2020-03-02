@@ -1,0 +1,177 @@
+---
+title: "Rusults Visualization"
+output:
+  word_document: default
+  html_notebook: default
+  html_document: default
+---
+# Download the data
+```{r}
+#Source files are here
+#setwd('D:/ML')
+#Download the files
+f1 <- read.csv2('flats_test.csv', header = TRUE, encoding = 'UNICOD')
+f2 <- read.csv2('flats_fit.csv', header = TRUE, encoding = 'UNICOD')
+f2 <- f2[-1]
+f <- dplyr::bind_cols(f1, f2)
+f <- f[,-1]
+f$type <- as.factor(f$type)
+head(f)
+```
+
+# Basic tasks
+
+## Basic plot setup
+```{r}
+library(ggplot2)
+g1 <- qplot(x=f$price, y=f$p_sr, geom="point")
+g1
+```
+
+## Point size, shape, color 
+```{r}
+g2 <- ggplot(f, aes(x=price, y=p_sr, color=location, shape=condition, size=rooms)) + geom_point(, alpha=0.5)  
+g2
+```
+
+## Add lm stat 
+```{r}
+g3 <- ggplot(f, aes(x=price, y=p_sr)) + 
+  geom_point(aes(color=location, shape=condition), size=f$rooms, alpha=0.5) + stat_smooth(method="lm")
+g3
+```
+
+## Add a diagonal line of perfect prediction
+```{r}
+g4 <- ggplot(f, aes(x=price, y=p_sr)) + 
+  geom_abline(intercept=0, slope=1) +
+  geom_point(aes(color=location, shape=condition), size=f$rooms, alpha=0.5)
+g4
+```
+
+## Add Title, X and Y axis labels
+```{r}
+g5 <- g4 + 
+  labs(title="Simple Regression", x="Real Price", y="Predicted Price")  
+g5
+```
+
+## Change title, X and Y axis label and text size, rotate axis text
+```{r}
+g6 <- g5 + theme(plot.title=element_text(size=25), axis.title.x=element_text(size=15), axis.title.y=element_text(size=15), axis.text.x=element_text(size=7, angle=90), axis.text.y=element_text(size=7, angle=45))
+g6
+```
+
+## Set colors
+```{r}
+g7 <- g6 + 
+  scale_color_manual(values=c("violetred", "steelblue")) +
+  theme(text=element_text(color="royalblue"))
+g7
+```
+
+## Grid lines and panel background
+```{r}
+g8<- g7 + theme(panel.background = element_rect(fill = 'light yellow'),
+  panel.grid.major = element_line(colour = "olivedrab", size=0.5),
+  panel.grid.minor = element_line(colour = "seagreen", size=0.1))
+g8
+```
+
+## Change legend position
+```{r}
+#Inside plot
+g9 <- g8 + theme(legend.justification=c(1,0), legend.position=c(1,0))  # legend justification is the anchor point on the legend, considering the bottom left of legend as (0,0)
+g9
+```
+
+# Bar chart
+
+## Price distribution
+```{r}
+h1 <- ggplot(f, aes(x=price)) + 
+  geom_histogram()
+h1
+```
+
+## Binwidth & colors
+```{r}
+h2 <- ggplot(f, aes(x=price)) +
+  geom_histogram(binwidth=25000, aes(fill=location), color="white")
+h2
+```
+
+## Divide in 2
+```{r}
+h3 <- h2 +
+  facet_wrap(~location)
+h3
+```
+
+## Scale and order
+```{r}
+h4 <- h2 + 
+  facet_wrap(~location, ncol=1, scales="free_x")
+h4
+```
+
+# Density
+```{r}
+d1 <- ggplot(f) +
+  geom_density(aes(x=price), fill="yellowgreen", color="white", alpha=0.8) +   geom_density(aes(x=p_sr), fill="salmon", color="white", alpha=0.5) + 
+geom_density(aes(x=p_dt), fill="seagreen", color="white", alpha=0.5)
+d1
+```
+
+# Compare models
+```{r}
+g_sr <- ggplot(f, aes(x=price, y=p_sr)) + 
+  geom_abline(intercept=0, slope=1) +
+  geom_point(aes(color=location, shape=condition), size=f$rooms, alpha=0.5) + labs(title="Linear Regression", x="Real Price", y="Predicted Price") + 
+  theme(plot.title=element_text(size=10), axis.title.x=element_text(size=7), axis.title.y=element_text(size=7), axis.text.x=element_text(size=5), axis.text.y=element_text(size=5)) + theme(legend.position="none")
+
+g_mr <- ggplot(f, aes(x=price, y=p_mr)) + 
+  geom_abline(intercept=0, slope=1) +
+  geom_point(aes(color=location, shape=condition), size=f$rooms, alpha=0.5) + labs(title="Multiple Regression", x="Real Price", y="Predicted Price") + 
+  theme(plot.title=element_text(size=10), axis.title.x=element_text(size=7), axis.title.y=element_text(size=7), axis.text.x=element_text(size=5), axis.text.y=element_text(size=5)) + theme(legend.position="none")
+
+g_pr <- ggplot(f, aes(x=price, y=p_pr)) + 
+  geom_abline(intercept=0, slope=1) +
+  geom_point(aes(color=location, shape=condition), size=f$rooms, alpha=0.5) + labs(title="Polynomial Regression", x="Real Price", y="Predicted Price") + 
+  theme(plot.title=element_text(size=10), axis.title.x=element_text(size=7), axis.title.y=element_text(size=7), axis.text.x=element_text(size=5), axis.text.y=element_text(size=5)) + theme(legend.position="none") 
+
+g_dt <- ggplot(f, aes(x=price, y=p_dt)) + 
+  geom_abline(intercept=0, slope=1) +
+  geom_point(aes(color=location, shape=condition), size=f$rooms, alpha=0.5) + labs(title="Regression Tree", x="Real Price", y="Predicted Price") + 
+  theme(plot.title=element_text(size=10), axis.title.x=element_text(size=7), axis.title.y=element_text(size=7), axis.text.x=element_text(size=5), axis.text.y=element_text(size=5)) + theme(legend.position="none")
+
+g_rf <- ggplot(f, aes(x=price, y=p_rf)) + 
+  geom_abline(intercept=0, slope=1) +
+  geom_point(aes(color=location, shape=condition), size=f$rooms, alpha=0.5) + labs(title="Random Forest", x="Real Price", y="Predicted Price") + 
+  theme(plot.title=element_text(size=10), axis.title.x=element_text(size=7), axis.title.y=element_text(size=7), axis.text.x=element_text(size=5), axis.text.y=element_text(size=5)) + theme(legend.position="none")
+
+gridExtra::grid.arrange(g_sr,g_mr,g_pr,g_dt,g_rf,ncol=2)
+```
+
+# Calc prediction error and visualize it
+```{r}
+sr <- mean ((f$price - f$p_sr) ^ 2)
+mr <- mean ((f$price - f$p_mr) ^ 2)
+pr <- mean ((f$price - f$p_pr) ^ 2)
+dt <- mean ((f$price - f$p_dt) ^ 2)
+rf <- mean ((f$price - f$p_rf) ^ 2)
+mse <- data.frame(sr,mr,pr,dt,rf)
+head(mse)
+
+mse1 <- reshape::melt.data.frame(mse)
+head(mse1)
+
+b1 <- ggplot(mse1, aes(x=variable, y=value)) +
+  geom_bar(stat="summary", fun.y="mean", fill = 'royalblue')
+b1
+```
+
+# Save results
+```{r}
+ggsave("plot.jpg", plot=b1 + theme_classic(), width=20, height=15, units="cm", dpi=600)
+```

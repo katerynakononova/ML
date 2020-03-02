@@ -1,0 +1,94 @@
+---
+title: "LOGISTIC REGRESSION"
+output:
+  word_document: default
+  html_notebook: default
+  html_document: default
+---
+
+# Download the data
+```{r}
+set.seed(123)
+#setwd('D:/ML')
+f <- read.csv('bank.csv', header = TRUE, encoding = 'UNICOD')
+```
+
+# Statistics
+
+## Descriptive statistics
+```{r}
+library (psych)
+describe(f)
+```
+
+# Features Scaling
+```{r}
+f <- f[-1] #exclude ID column
+sc <- f[,c('age','income','children')]
+sc <- scale(sc)
+f$age <- sc[,c('age')]
+f$income <- sc[,c('income')]
+f$children <- sc[,c('children')]
+head (f)
+```
+
+# Splitting the scaled dataset into the TRAIN set and TEST set
+```{r}
+set.seed(123)
+library(caTools)
+split = sample.split(f$delays, SplitRatio = 2/3)
+f_train = subset(f, split == TRUE)
+f_test = subset(f, split == FALSE)
+```
+
+# Fitting (Benchmark model)
+```{r}
+class_lr <- glm(delays ~ ., f_train, family = binomial)
+summary(class_lr)
+```
+
+## Optimized model
+```{r}
+class_opt <- glm(delays ~ age + income, f_train, family = binomial)
+summary(class_opt)
+```
+
+# Predicting
+```{r}
+p <- predict(class_opt, f_test[, c('age','income')], type = 'response')
+y <- ifelse(p > 0.5, 1, 0)
+```
+
+## Confusion Matrix
+```{r}
+cm = table(f_test[, 'delays'], y > 0.5)
+print(cm)
+```
+
+## ROC
+```{r}
+library(ROCR)
+pref <- prediction(p, f_test$delays)
+perf <- performance(pref, "tpr", "fpr")
+plot(perf)
+```
+
+# Visualising the Test set results
+```{r}
+#install.packages("ElemStatLearn")
+library(ElemStatLearn)
+set = f_test[,c('age','income','delays')]
+X1 = seq(min(set['age']) - 1, max(set['age']) + 1, by = 0.01)
+X2 = seq(min(set['income']) - 1, max(set['income']) + 1, by = 0.01)
+grid_set = expand.grid(X1, X2)
+colnames(grid_set) = c('age', 'income')
+prob_set = predict(class_opt, grid_set, type = 'response')
+y_grid = ifelse(prob_set > 0.5, 1, 0)
+plot(set[, -3],
+     main = 'Logistic Regression',
+     xlab = 'Age', ylab = 'Income',
+     xlim = range(X1), ylim = range(X2))
+contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'tomato', 'springgreen3'))
+points(set, pch = 21, bg = ifelse(set[, 3] == 'YES', 'red3', 'green4'))
+```
