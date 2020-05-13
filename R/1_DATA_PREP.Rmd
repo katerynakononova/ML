@@ -1,0 +1,125 @@
+---
+title: "DATA PREPARATION"
+output:
+  word_document: default
+  html_notebook: default
+  pdf_document: default
+  html_document: default
+---
+
+# Download data
+```{r warning: FALSE}
+#Set Working Directory
+#setwd('D:/ML')
+#OR Choose your Directory in 'Files' and click on 'More' -> 'Set as Working Directory' 
+#Download file to the table. Source file is 'flats.csv'
+f <- read.csv2('flats.csv', header = TRUE, encoding = 'UNICOD')
+#Connect library
+library (dplyr)
+#Have a look at the data
+glimpse(f)  
+head(f)
+```
+
+# Visualising
+
+## Histogram
+```{r}
+library(ggplot2)
+par(mfrow = c(1, 2))
+hist(f$m2, col = 'dark blue', main = 'm2', xlab = 'Value')
+hist(f$price, col = 'dark green', main = 'price', xlab = 'Value')
+```
+
+## Box-plot
+```{r}
+par(mfrow = c(1, 3))
+boxplot(f$rooms)
+boxplot(f$m2)
+boxplot(f$price)
+qplot(data = f, 
+      x = condition, 
+      y = price, 
+      geom = "boxplot")
+```
+
+## Violin
+```{r}
+qplot(data = f, 
+      x = type, 
+      y = price, 
+      geom = "violin")
+```
+
+# Statistics
+
+## Descriptive statistics
+```{r}
+library (psych)
+describe(f)
+```
+
+## Correlations
+```{r}
+pairs.panels(f, lm=TRUE, # linear fit
+             method = "pearson", # correlation method
+             hist.col = "#00AFBB"
+             )
+```
+
+# Missing data
+
+## Delete N/A (not recommended strategy) 
+```{r}
+f_reduce <- tidyr::drop_na(f)
+cat('there are',nrow(f_reduce),'rows in the f_reduce')
+```
+
+## Fill n/a 
+```{r}
+#1 with neighboring values
+f_fill1 <- tidyr::fill(f, rooms, .direction = 'down')  
+f_fill1 <- tidyr::fill(f_fill1, type, .direction = 'up')
+head(f_fill1)
+```
+```{r}
+#2 with average or the most frequent
+f_fill2 <- f
+##with average for integer vars 
+f_fill2$rooms <- ifelse(is.na(f$rooms),round(mean(f$rooms,na.rm = TRUE)),f$rooms)
+##the most frequent for categorical vars
+f_fill2$type <- ifelse(is.na(f$type),which.max(table(f$type)),f$type)
+f_fill2$type <- as.factor(f_fill2$type)
+head(f_fill2)
+#let's work with "filled with ave" data 
+f <- f_fill2
+```
+
+# Ejections (outside the three sigma)
+
+## Remove the ejections (not recommended strategy)
+```{r}
+f_ej1 <- f[f$price < mean(f$price)+sd(f$price)*3, ]
+describe(f_ej1$price)
+```
+
+## Replace with max
+```{r}
+f_ej2 <- f
+f_ej2$price <- ifelse(f$price < mean(f$price)+sd(f$price)*3,f$price,mean(f$price)+sd(f$price)*3)
+describe(f_ej2$price)
+#let's work with f_eg2
+f <- f_ej2
+```
+
+# Splitting the dataset into the TRAIN set and TEST set
+```{r}
+set.seed(123)
+library(caTools)
+split = sample.split(f$price, SplitRatio = 0.8)
+f_train = subset(f, split == TRUE)
+f_test = subset(f, split == FALSE)
+#Write prepared data to the file
+write.csv2(f_train, file = "flats_train.csv")
+write.csv2(f_test, file = "flats_test.csv")
+```

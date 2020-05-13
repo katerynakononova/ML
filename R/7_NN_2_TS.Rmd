@@ -1,0 +1,106 @@
+---
+title: "NEURAL NETWORKS FOR TIME SERIES"
+output:
+  word_document: default
+  html_notebook: default
+  html_document: default
+---
+
+# Download the data and libraries
+```{r}
+library(dplyr)
+library(nnet)
+library(ggplot2)
+library(knitr)
+library (psych)
+#Set Working Directory
+#setwd('D:/ML')
+#OR Choose your Directory in 'Files' and click on 'More' -> 'Set as Working Directory' #Download file to the table.
+f <- read.csv('iPhone.csv', header = TRUE, encoding = 'UNICOD')
+plot(f)
+```
+
+## Transforming data 
+```{r}
+#to stationarity
+df = diff(f$search, differences = 1)
+df <- as.data.frame(df)
+
+#scaling
+ymax <- max(df$df)
+ymin <- min(df$df)
+df$y <- (df$df - ymin ) / (ymax - ymin)
+
+#lagging
+df$x1 <- dplyr::lag(df$y)
+df$x2 <- dplyr::lag(df$y,2)
+df$x3 <- dplyr::lag(df$y,3)
+head (df)
+```
+
+## Splitting the scaled dataset into the TRAIN set and TEST set
+```{r}
+N = nrow(df)
+n = round(N *0.7, digits = 0)
+train = df[4:n, ]
+test  = df[(n+1):N,  ]
+```
+
+# Fitting the NN
+```{r results='hide'}
+set.seed(11)
+ff_ts <- nnet::nnet(train[,2:4], train$y, linout = TRUE ,size = 10, maxit = 10000)
+library(graphics)
+source(file = 'plot.nnet.R')
+plot.nnet(ff_ts)
+```
+
+## Prediction
+```{r}
+p_ff_ts <- predict(ff_ts, test[,2:4])
+mse_ff_ts<-sum((test[,1]-p_ff_ts)^2)/length(p_ff_ts)
+mse_ff_ts
+plot(test$y, p_ff_ts)
+```
+
+## Visualising
+```{r}
+library(ggplot2)
+ggplot() +
+#  geom_point(aes(f$date[4:n], train$y),colour = 'red') +
+  geom_point(aes(f$date[(n+1):N], test$y),colour = 'dark green', size = 3) +
+  geom_point(aes(f$date[(n+1):N], p_ff_ts),colour = 'blue', size = 1) +
+  ggtitle('iPhone in time') +
+  xlab('date') +
+  ylab('iPhone')
+```
+
+## Inverting
+```{r}
+# invert scaling
+ys = p_ff_ts * (ymax - ymin) + ymin
+plot(df$df[(n+1):N],ys)
+
+# invert differencing
+fd = numeric(N-n-1)
+fd[1] <- f$search[n+1] + ys[1]
+
+for(i in 2:(N-n-1)){
+     fd[i] = fd[i-1] + ys[i]
+}
+
+library(ggplot2)
+plot(f$search[(n+2):N], fd)
+```
+
+## Visualising
+```{r}
+library(ggplot2)
+ggplot() +
+  geom_point(aes(f$date[2:(n+1)], f$search[2:(n+1)]),colour = 'red') +
+  geom_point(aes(f$date[(n+2):N], f$search[(n+2):N]),colour = 'dark green', size = 3) +
+  geom_point(aes(f$date[(n+2):N], fd),colour = 'blue', size = 1) +
+  ggtitle('iPhone in time') +
+  xlab('date') +
+  ylab('iPhone')
+```

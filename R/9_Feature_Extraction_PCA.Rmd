@@ -1,0 +1,143 @@
+---
+title: "Feature Extraction - PCA"
+output:
+  word_document: default
+  html_notebook: default
+  html_document: default
+---
+
+# Download the data
+```{r}
+set.seed(123)
+#setwd('D:/ML')
+f <- read.csv('bank.csv', header = TRUE, encoding = 'UNICOD')
+f <- f[-1]
+```
+
+## Features Encoding & Scaling
+```{r}
+f$region = as.numeric(factor(f$region, levels = c('TOWN', 'INNER_CITY',
+           'sUBURBAN','RURAL'),labels = c(1, 2, 3, 4)))
+f$sex = as.numeric(factor(f$sex,levels = c('FEMALE', 'MALE'),
+                                labels = c(1, 2)))
+f$married = as.numeric(f$married)
+f$car = as.numeric(f$car)
+f$mortgage = as.numeric(f$mortgage)
+f$delays = as.numeric(f$delays)-1
+f[-9] <- as.data.frame(scale(f[-9]))
+```
+
+## Delete N/A
+```{r}
+f <- tidyr::drop_na(f)
+cat('there are',nrow(f),'rows in the f')
+```
+
+## Splitting the dataset into the TRAIN set and TEST set
+```{r}
+set.seed(123)
+library(caTools)
+split = sample.split(f$delays, SplitRatio = 2/3)
+f_train = subset(f, split == TRUE)
+f_test = subset(f, split == FALSE)
+```
+
+# Applying PCA
+```{r}
+# install.packages('caret')
+library(caret)
+# install.packages('e1071')
+library(e1071)
+pca = preProcess(x = f_train[-9], method = 'pca', pcaComp = 2)
+f_train_pca = predict(pca, f_train)
+f_train_pca = f_train_pca[c(2, 3, 1)]
+f_test_pca = predict(pca, f_test)
+f_test_pca = f_test_pca[c(2, 3, 1)]
+```
+
+# Fitting SVM to the PCA-Training set
+```{r}
+# install.packages('e1071')
+library(e1071)
+classifier = svm(formula = delays ~ .,
+                 data = f_train_pca,
+                 type = 'C-classification',
+                 kernel = 'linear')
+```
+
+## Predicting the Test set results
+```{r}
+y_pred = predict(classifier, newdata = f_test_pca[-3])
+```
+
+## Making the Confusion Matrix
+```{r}
+cm = table(f_test_pca[, 3], y_pred)
+print(cm)
+```
+
+## Visualising the Test set results
+```{r}
+library(ElemStatLearn)
+set = f_test_pca
+X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
+X2 = seq(min(set[, 2]) - 1, max(set[, 2]) + 1, by = 0.01)
+grid_set = expand.grid(X1, X2)
+colnames(grid_set) = c('PC1', 'PC2')
+y_grid = predict(classifier, newdata = grid_set)
+plot(set[, -3], main = 'SVM (Test set)',
+     xlab = 'PC1', ylab = 'PC2',
+     xlim = range(X1), ylim = range(X2))
+contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid == 2, 'deepskyblue', ifelse(y_grid == 1, 'springgreen3', 'tomato')))
+points(set, pch = 21, bg = ifelse(set[, 3] == 2, 'blue3', ifelse(set[, 3] == 1, 'green4', 'red3')))
+```
+
+# Applying Kernel PCA
+```{r}
+# install.packages('kernlab')
+library(kernlab)
+kpca = kpca(~., data = f_train[-9], kernel = 'rbfdot', features = 2)
+f_train_kpca = as.data.frame(predict(kpca, f_train))
+f_train_kpca$delays = f_train$delays
+f_test_kpca = as.data.frame(predict(kpca, f_test))
+f_test_kpca$delays = f_test$delays
+```
+
+# Fitting SVM to the KPCA-Training set
+```{r}
+# install.packages('e1071')
+library(e1071)
+classifier = svm(formula = delays ~ .,
+                 data = f_train_kpca,
+                 type = 'C-classification',
+                 kernel = 'linear')
+```
+
+## Predicting the Test set results
+```{r}
+y_pred = predict(classifier, newdata = f_test_kpca[-3])
+```
+
+## Making the Confusion Matrix
+```{r}
+cm = table(f_test_kpca[, 3], y_pred)
+print(cm)
+```
+
+## Visualising the Test set results
+```{r}
+library(ElemStatLearn)
+set = f_test_kpca
+X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
+X2 = seq(min(set[, 2]) - 1, max(set[, 2]) + 1, by = 0.01)
+grid_set = expand.grid(X1, X2)
+colnames(grid_set) = c('V1', 'V2')
+y_grid = predict(classifier, newdata = grid_set)
+plot(set[, -3], main = 'SVM (Test set)',
+     xlab = 'PC1', ylab = 'PC2',
+     xlim = range(X1), ylim = range(X2))
+contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid == 2, 'deepskyblue', ifelse(y_grid == 1, 'springgreen3', 'tomato')))
+points(set, pch = 21, bg = ifelse(set[, 3] == 2, 'blue3', ifelse(set[, 3] == 1, 'green4', 'red3')))
+```
