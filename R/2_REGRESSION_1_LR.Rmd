@@ -9,11 +9,6 @@ output:
 
 # Download the data
 ```{r}
-#Source files are here
-#setwd('D:/ML')
-
-##Features scaling is included in the packages we will work with
-
 #Download the files
 f_train <- read.csv2('flats_train.csv', header = TRUE, encoding = 'UNICOD')
 f_train <- f_train[,-1]
@@ -21,26 +16,29 @@ f_test <- read.csv2('flats_test.csv', header = TRUE, encoding = 'UNICOD')
 f_test <- f_test[,-1]
 ```
 
+# Correlations
+```{r}
+pairs.panels(f, lm=TRUE, # linear fit
+             method = "pearson", # correlation method
+             hist.col = "#00AFBB"
+             )
+```
+
 # Simple Linear Regression (one factor - m2)
 
 ## Fitting Simple Linear Regression to the Training set
 ```{r}
-model_sr <- lm(price ~ m2, f_train)
-summary(model_sr)
+sr <- lm(price ~ m2, f_train)
+summary(sr)
 ```
 
 ## Predicting
 ```{r}
-p_sr <- predict(model_sr, f_test)
-
-r2_sr <- 1-sum((f_train$price - predict(model_sr, f_train))^2)/sum((f_train$price - mean(f_train$price))^2)
-R2_sr <- cor(f_train$price, fitted(model_sr))^2 #simplier ex.
-
-train_mse_sr <- sum((f_train$price-predict(model_sr, f_train))^2)/length(f_train$price)
+p_sr <- predict(sr, f_test)
+#MSE
+train_mse_sr <- sum((f_train$price-predict(sr, f_train))^2)/length(f_train$price)
 test_mse_sr <- sum((f_test$price-p_sr)^2)/length(p_sr)
 
-r2_sr
-R2_sr
 train_mse_sr
 test_mse_sr
 ```
@@ -61,22 +59,22 @@ ggplot() +
 
 ## All factors
 ```{r}
-model_mr <- lm(data = f_train, price ~ .) 
-summary(model_mr)  
+mr <- lm(price ~ ., f_train) 
+summary(mr)  
 ```
 
 ## Optimized model
 ```{r}
 #as p-value, Pr(>|t|) of variable "type" is higher than significance level (5%), let's exclude this variable from the model
-model_opt <- lm(data = f_train, price ~ rooms + location + condition + m2) 
-summary(model_opt)  
+mr_opt <- lm(price ~ rooms + location + condition + m2, f_train) 
+summary(mr_opt)  
 ```
 
 ## Prediction
 ```{r}
-p_mr <- predict(model_opt, f_test)
+p_mr <- predict(mr_opt, f_test)
 
-train_mse_opt <- sum((f_train$price-predict(model_opt, f_train))^2)/length(f_train$price)
+train_mse_opt <- sum((f_train$price-predict(mr_opt, f_train))^2)/length(f_train$price)
 test_mse_opt <- sum((f_test$price-p_mr)^2)/length(p_mr)
 
 train_mse_opt
@@ -108,15 +106,15 @@ f_test_poly$m23 <- f_test_poly$m2^3
 
 ## 3 powers
 ```{r}
-model_pr <- lm(data = f_train_poly, price ~ m22 + m23) 
-summary(model_pr)  
+pr <- lm(price ~ m22 + m23, f_train_poly) 
+summary(pr)  
 ```
 
 ## Predicting
 ```{r}
-p_pr <- predict(model_pr, f_test_poly)
+p_pr <- predict(pr, f_test_poly)
 
-train_mse_poly <- sum((f_train_poly$price-predict(model_pr, f_train_poly))^2)/length(f_train_poly$price)
+train_mse_poly <- sum((f_train_poly$price-predict(pr, f_train_poly))^2)/length(f_train_poly$price)
 test_mse_poly <- sum((f_test_poly$price-p_pr)^2)/length(p_pr)
 
 train_mse_poly
@@ -136,6 +134,6 @@ ggplot() +
 
 # Saving results
 ```{r}
-fit <- data.frame(p_sr, p_mr, p_pr)
+fit <- data.frame(f_test$price, p_sr, p_mr, p_pr)
 write.csv2(fit, file = "flats_fit.csv")
 ```
