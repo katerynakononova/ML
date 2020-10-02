@@ -18,7 +18,8 @@ f_test <- f_test[,-1]
 
 # Correlations
 ```{r}
-pairs.panels(f, lm=TRUE, # linear fit
+library (psych)
+pairs.panels(f_train, lm=TRUE, # linear fit
              method = "pearson", # correlation method
              hist.col = "#00AFBB"
              )
