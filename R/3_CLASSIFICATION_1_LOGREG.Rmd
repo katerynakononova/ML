@@ -11,7 +11,10 @@ output:
 set.seed(123)
 #setwd('D:/ML')
 f <- read.csv('bank.csv', header = TRUE, encoding = 'UNICOD')
+head (f)
 ```
+
+#### Висновок: Для побудови моделі банківського скорингу використані дані про наявність прострочених платежів по кредиту 
 
 # Statistics
 
@@ -21,16 +24,28 @@ library (psych)
 describe(f)
 ```
 
-# Features Scaling
+#### Висновок: Кількість спостережень - 600, кількість змінних - 10, з них якісних - 7, кількісних - 3. Пропущених значень і викидів немає 
+
+## Factors as numeric
 ```{r}
-f <- f[-1] #exclude ID column
-sc <- f[,c('age','income','children')]
+#f[,c('sex','married','car','mortgage','delays')] <- as.numeric(as.factor(f[,c('sex','married','car','mortgage','delays')]))
+f$sex <- as.numeric(as.factor(f$sex))
+f$married <- as.numeric(as.factor(f$married))
+f$car <- as.numeric(as.factor(f$car))
+f$mortgage <- as.numeric(as.factor(f$mortgage))
+f$delays <- as.numeric(as.factor(f$delays)) - 1
+```
+
+## Features Scaling
+```{r}
+f <- f[,-1] #exclude ID column
+sc <- f[, -c(8)]
 sc <- scale(sc)
-f$age <- sc[,c('age')]
-f$income <- sc[,c('income')]
-f$children <- sc[,c('children')]
+f[,c('age','sex','income','married','children','car','mortgage')] <- sc[,c('age','sex','income','married','children','car','mortgage')]
 head (f)
 ```
+
+#### Висновок: Моделі класифікації вимагають попереднього шкалювання кількісних змінних
 
 # Splitting the scaled dataset into the TRAIN set and TEST set
 ```{r}
@@ -41,11 +56,15 @@ f_train = subset(f, split == TRUE)
 f_test = subset(f, split == FALSE)
 ```
 
+#### Висновок: Підготований датасет розділено на навчальну та тестову вибірки
+
 # Fitting (Benchmark model)
 ```{r}
 class_lr <- glm(delays ~ ., f_train, family = binomial)
 summary(class_lr)
 ```
+
+#### Висновок: Значущими змінними є age та income
 
 ## Optimized model
 ```{r}
@@ -53,17 +72,23 @@ class_opt <- glm(delays ~ age + income, f_train, family = binomial)
 summary(class_opt)
 ```
 
+#### Висновок: Всі змінні оптимізованої моделі є значущими
+
 # Predicting
 ```{r}
 p <- predict(class_opt, f_test[, c('age','income')], type = 'response')
 y <- ifelse(p > 0.5, 1, 0)
 ```
 
+#### Висновок: Розраховані ймовірності віднесення об'єктів до кожного з двох класів (вектор р), визначені класи об'єктів (вектор у)
+
 ## Confusion Matrix
 ```{r}
 cm = table(f_test[, 'delays'], y > 0.5)
 print(cm)
 ```
+
+#### Висновок: точність моделі - (85+88)/200=86,5%, частка невірно класифікованих випадків - (13+14)/200=13,5%. Чутливість моделі - 88/(14+88)=86%, специфічність - 85/(85+13)=87%, тобто модель більш чутлива до виявлення негативних випадків. В даному випадку - кредиторів, що не мають заборгованості.
 
 ## ROC
 ```{r}
@@ -73,10 +98,11 @@ perf <- performance(pref, "tpr", "fpr")
 plot(perf)
 ```
 
+#### Висновок: співвідношення істинно-позитивних і хибно-позитивних випадків свідчить про відносно хорошу якість моделі
+
 # Visualising the Test set results
 ```{r}
-#install.packages("ElemStatLearn")
-library(ElemStatLearn)
+library(ggplot2)
 set = f_test[,c('age','income','delays')]
 X1 = seq(min(set['age']) - 1, max(set['age']) + 1, by = 0.01)
 X2 = seq(min(set['income']) - 1, max(set['income']) + 1, by = 0.01)
@@ -90,5 +116,7 @@ plot(set[, -3],
      xlim = range(X1), ylim = range(X2))
 contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
 points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'tomato', 'springgreen3'))
-points(set, pch = 21, bg = ifelse(set[, 3] == 'YES', 'red3', 'green4'))
+points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'red3', 'green4'))
 ```
+
+#### Висновок: на графіку червоним позначені випадки затримки з повернення кредиту, зеленим - хороші кредитори. Червоним виділена зона високої ймовірності неповернення кредиту. Модель описує лінійний варіант поділяючої кривої
