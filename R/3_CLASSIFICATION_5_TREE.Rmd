@@ -9,9 +9,9 @@ output:
 # Download the data
 ```{r}
 set.seed(123)
-#setwd('D:/ML')
 f <- read.csv('bank.csv', header = TRUE, encoding = 'UNICOD')
 f <- f[-1]
+f$delays <- as.factor(f$delays)
 ```
 
 ## Splitting the dataset into the TRAIN set and TEST set
@@ -86,8 +86,7 @@ print(cm)
 
 # Visualising the Test set results
 ```{r}
-#install.packages("ElemStatLearn")
-library(ElemStatLearn)
+library(ggplot2)
 set = f_test[,c('age','income','delays')]
 X1 = seq(min(set['age']) - 1, max(set['age']) + 1, by = 0.01)
 X2 = seq(min(set['income']) - 1, max(set['income']) + 1, by = 0.01)
@@ -111,10 +110,14 @@ set.seed(123)
 class_rf = randomForest(delays ~ ., data = f_train, ntree = 50)
 ```
 
+#### Висновок: проведено навчання моделі випадкового лісу
+
 ## Predicting
 ```{r}
 y <- predict(class_rf, f_test[, c('age','income')], type = 'class')
 ```
+
+#### Висновок: Визначені класи об'єктів (вектор у). Для цього використано параметр type = 'class'
 
 ## Confusion Matrix
 ```{r}
@@ -139,15 +142,13 @@ points(grid_set, pch = '.', col = ifelse(y_grid == 'YES', 'tomato', 'springgreen
 points(set, pch = 21, bg = ifelse(set[, 3] == 'YES', 'red3', 'green4'))
 ```
 
-# Encoding the categorical variables as factors
+## Factors as numeric
 ```{r}
-f$region = as.numeric(factor(f$region, levels = c('TOWN', 'INNER_CITY', 'sUBURBAN', 'RURAL'),labels = c(1, 2, 3, 4)))
-f$sex = as.numeric(factor(f$sex,levels = c('FEMALE', 'MALE'),
-                                labels = c(1, 2)))
-f$married = as.numeric(f$married)
-f$car = as.numeric(f$car)
-f$mortgage = as.numeric(f$mortgage)
-f$delays = as.numeric(f$delays)-1
+f$sex <- as.numeric(as.factor(f$sex))
+f$married <- as.numeric(as.factor(f$married))
+f$car <- as.numeric(as.factor(f$car))
+f$mortgage <- as.numeric(as.factor(f$mortgage))
+f$delays <- as.numeric(as.factor(f$delays))-1
 ```
 
 ## Delete N/A
@@ -172,6 +173,8 @@ library(xgboost)
 class_xboost = xgboost(data = as.matrix(f_train[-9]), label = f_train$delays, nrounds = 10)
 ```
 
+#### Висновок: проведено навчання моделі XGBoost протягом 10 раундів
+
 ## Predicting the Test set results
 ```{r}
 y_pred = predict(class_xboost, newdata = as.matrix(f_test[-9]))
@@ -180,7 +183,7 @@ y_pred = (y_pred >= 0.5)
 
 ## Making the Confusion Matrix
 ```{r}
-cm = table(f_test[, 9], y_pred)
+cm = table(f_test[, 8], y_pred)
 print(cm)
 ```
 
@@ -192,10 +195,10 @@ folds = createFolds(f_train$delays, k = 10)
 cv = lapply(folds, function(x) {
   train_fold = f_train[-x, ]
   test_fold = f_train[x, ]
-  class_xboost = xgboost(data = as.matrix(f_train[-9]), label = f_train$delays, nrounds = 10)
-  y_pred = predict(class_xboost, newdata = as.matrix(test_fold[-9]))
+  class_xboost = xgboost(data = as.matrix(f_train[-8]), label = f_train$delays, nrounds = 10)
+  y_pred = predict(class_xboost, newdata = as.matrix(test_fold[-8]))
   y_pred = (y_pred >= 0.5)
-  cm = table(test_fold[, 9], y_pred)
+  cm = table(test_fold[, 8], y_pred)
   accuracy = (cm[1,1] + cm[2,2]) / (cm[1,1] + cm[2,2] + cm[1,2] + cm[2,1])
   return(accuracy)
 })

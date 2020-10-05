@@ -49,8 +49,7 @@ print(cm)
 
 ## Visualising the Test set results
 ```{r}
-#install.packages("ElemStatLearn")
-library(ElemStatLearn)
+library(ggplot2)
 set = f_test
 X1 = seq(min(set['age']) - 1, max(set['age']) + 1, by = 0.01)
 X2 = seq(min(set['income']) - 1, max(set['income']) + 1, by = 0.01)
