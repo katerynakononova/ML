@@ -9,33 +9,17 @@ output:
 # Download the data
 ```{r}
 set.seed(123)
-#setwd('D:/ML')
-f <- read.csv('bank.csv', header = TRUE, encoding = 'UNICOD')
+f_train <- read.csv2('bank_train.csv', header = TRUE, encoding = 'UNICOD')
+f_test <- read.csv2('bank_test.csv', header = TRUE, encoding = 'UNICOD')
+f_train <- f_train[-1]
+f_test <- f_test[-1]
 ```
 
-# Features Scaling
-```{r}
-f <- f[,c('age','income','delays')]
-sc <- scale(f[-3])
-f$age <- sc[,c('age')]
-f$income <- sc[,c('income')]
-f$delays <- as.numeric(as.factor(f$delays)) - 1
-```
-
-# Splitting the scaled dataset into the TRAIN set and TEST set
-```{r}
-set.seed(123)
-library(caTools)
-split = sample.split(f$delays, SplitRatio = 2/3)
-f_train = subset(f, split == TRUE)
-f_test = subset(f, split == FALSE)
-```
-
-# Fitting linear model
+# Fitting SVM model
 ```{r}
 # install.packages('e1071')
 library(e1071)
-class_svm_l = svm(delays ~ ., data = f_train, kernel = 'linear')
+class_svm_l = svm(delays ~ age + income, data = f_train, kernel = 'linear')
 summary(class_svm_l)
 ```
 
@@ -58,15 +42,15 @@ ygrid = predict(class_svm_l, xgrid)
 
 #Finally, you plot the points and color them according to the decision boundary. You can see that the decision boundary is linear. You can put the data points in the plot as well to see where they lie.
 
-plot(xgrid, col = as.numeric(ygrid), pch = 20, cex = .2)
+plot(xgrid, col = as.numeric(ygrid), pch = 10, cex = .9)
 points(f_test[, c('age','income')], col = as.factor(f_test$delays), pch = 19)
 ```
 
-# Fitting RBF model
+# Fitting RBF-kernel model
 ```{r}
 # install.packages('e1071')
 library(e1071)
-class_svm_r = svm(delays ~ ., data = f_train, kernel = 'radial')
+class_svm_r = svm(delays ~ age + income, data = f_train, kernel = 'radial')
 summary(class_svm_r)
 ```
 
