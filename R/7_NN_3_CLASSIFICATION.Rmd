@@ -1,45 +1,41 @@
 ---
-title: "NEURAL NETWORKS FOR CLASSIFICATION"
+title: "NEUORAL NETWORKS FOR CLASSIFICATION"
 output:
   word_document: default
   html_notebook: default
   html_document: default
 ---
 
-# Download the data and libraries
+# Download libraries
 ```{r}
 library(dplyr)
-library(nnet)
 library(ggplot2)
 library(knitr)
-#setwd('D:/ML')
-f <- read.csv('bank.csv', header = TRUE, encoding = 'UNICOD')
-library (psych)
-describe(f)
 ```
 
-## Features Scaling
-```{r}
-f <- f[-1]
-f$age = scale(f$age)
-f$children = scale(f$children)
-f$income = scale(f$income)
-head(f)
-```
-
-## Splitting the scaled dataset into the TRAIN set and TEST set
+# Download data
 ```{r}
 set.seed(123)
-library(caTools)
-split = sample.split(f$income, SplitRatio = 2/3)
-f_train = subset(f, split == TRUE)
-f_test = subset(f, split == FALSE)
+f_train <- read.csv2('bank_train.csv', header = TRUE, encoding = 'UNICOD')
+f_test <- read.csv2('bank_test.csv', header = TRUE, encoding = 'UNICOD')
+f_train <- f_train[-1]
+f_test <- f_test[-1]
 ```
 
+```{r  results='hide'}
+library(neuralnet)
+
+# fit neural network
+nn = neuralnet(delays ~ income + age, f_train, hidden = 3, linear.output = T)
+
+# plot neural network
+plot(nn)
+```
 # Fitting the NN
 ```{r results='hide'}
+library(nnet)
 set.seed(11)
-ff_cl <- nnet(data = f_train, delays ~ married + children + income + age, size = 3, maxit = 1000)
+ff_cl <- nnet(data = f_train, delays ~ income + age, size = 2, maxit = 1000)
 library(graphics)
 source(file = 'plot.nnet.R')
 plot.nnet(ff_cl)
@@ -47,37 +43,15 @@ plot.nnet(ff_cl)
 
 ## Predicting
 ```{r}
-p_ff_cl <- predict(ff_cl, f_test, type = "class")
-p <- as.factor(p_ff_cl)
+p_nn_cl <- predict(nn, f_test)
+#p <- (p > 0.5)
+#p <- as.factor(p_ff_cl)
 ```
+
+#### Висновок: визначені класи об'єктів (вектор p)
 
 ## Confusion Matrix
 ```{r}
 cm = table(f_test[, 'delays'], p)
 print(cm)
-```
-
-# Fitting another ANN to the Training set
-```{r}
-# install.packages('h2o')
-library(h2o)
-h2o.init(nthreads = -1)
-model = h2o.deeplearning(y = 'delays',
-                         training_frame = as.h2o(training_set),
-                         activation = 'Rectifier',
-                         hidden = c(5,5),
-                         epochs = 100,
-                         train_samples_per_iteration = -2)
-```
-
-# Predicting the Test set results
-```{r}
-y_pred = h2o.predict(model, newdata = as.h2o(test_set[-11]))
-y_pred = (y_pred > 0.5)
-y_pred = as.vector(y_pred)
-```
-
-# Making the Confusion Matrix
-```{r}
-cm = table(test_set[, 11], y_pred)
 ```
