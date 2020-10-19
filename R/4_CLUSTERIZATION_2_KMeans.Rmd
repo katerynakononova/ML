@@ -9,22 +9,46 @@ output:
 # Download the data
 ```{r}
 set.seed(123)
-#setwd('D:/ML')
 f <- read.csv('bank.csv', header = TRUE, encoding = 'UNICOD')
-f <- f[, c('age', 'income')]
+head(f)
 ```
 
-# Elbow method to find optimal number of clusters
-```{r, asis}
-library(stats)
-wcss = vector()
-for (i in 1:10) wcss[i] = sum(kmeans(f, i)$withinss)
-plot(1:10,
-     wcss,
-     type = 'b',
-     main = paste('The Elbow Method'),
-     xlab = 'Number of clusters',
-     ylab = 'WCSS')
+## Factors as numeric
+```{r}
+f <- f[,-1] #exclude ID column
+f$sex <- as.numeric(as.factor(f$sex))-1
+f$married <- as.numeric(as.factor(f$married))-1
+f$car <- as.numeric(as.factor(f$car))-1
+f$mortgage <- as.numeric(as.factor(f$mortgage))-1
+f$delays <- as.numeric(as.factor(f$delays))-1
+head (f)
+```
+
+### NbCLust
+```{r}
+library(factoextra)
+library(NbClust)
+
+res.nbclust <- NbClust(f, distance = "euclidean",
+                  min.nc = 2, max.nc = 10, 
+                  method = "complete", index ="all")
+fviz_nbclust(res.nbclust) + theme_minimal() + ggtitle("NbClust's optimal number of clusters")
+
+# Elbow method
+# The sum of squares at each number of clusters is calculated and graphed, and the user looks for a change of slope from steep to shallow (an elbow) to determine the optimal number of clusters.
+fviz_nbclust(f, kmeans, method = "wss") +
+    geom_vline(xintercept = 3, linetype = 2)+
+  labs(subtitle = "Elbow method")
+
+# Silhouette method
+# The optimal number of clusters k is the one that maximize the average silhouette over a range of possible values for k.
+fviz_nbclust(f, kmeans, method = "silhouette")+
+  labs(subtitle = "Silhouette method")
+
+# Gap statistic
+# The gap statistic compares the total within intra-cluster variation for different values of k with their expected values under null reference distribution of the data. The estimate of the optimal clusters will be value that maximize the gap statistic. This means that the clustering structure is far away from the random uniform distribution of points.
+fviz_nbclust(f, kmeans, nstart = 25,  method = "gap_stat", nboot = 50)+
+  labs(subtitle = "Gap statistic method")
 ```
 
 # Fitting K-Means to the dataset
