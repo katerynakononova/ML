@@ -9,9 +9,19 @@ output:
 # Download the data
 ```{r}
 set.seed(123)
-#setwd('D:/ML')
 f <- read.csv('bank.csv', header = TRUE, encoding = 'UNICOD')
-f <- f[, c('age', 'income')]
+head(f)
+```
+
+## Factors as numeric
+```{r}
+f <- f[,-1] #exclude ID column
+f$sex <- as.numeric(as.factor(f$sex))-1
+f$married <- as.numeric(as.factor(f$married))-1
+f$car <- as.numeric(as.factor(f$car))-1
+f$mortgage <- as.numeric(as.factor(f$mortgage))-1
+f$delays <- as.numeric(as.factor(f$delays))-1
+head (f)
 ```
 
 # Hierarchical clustering
@@ -25,6 +35,9 @@ plot(model_hc, main = paste('Dendrogram'))
 y_hc <- cutree(model_hc, k = 3)
 #cluster cores
 aggregate(f,by=list(y_hc),FUN=mean)
+#Cluster stat
+f$hc <- y_hc
+table(f$hc)
 ```
 
 ## Plotting the dendrogram

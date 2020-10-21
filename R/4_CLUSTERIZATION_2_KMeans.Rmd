@@ -24,7 +24,25 @@ f$delays <- as.numeric(as.factor(f$delays))-1
 head (f)
 ```
 
-### NbCLust
+## Historgram for each attribute
+```{r}
+library(tidyr)
+library(ggplot2)
+f %>% 
+  gather(Attributes, value, 1:8) %>% 
+  ggplot(aes(x=value)) +
+  geom_histogram(fill = "lightblue2", color = "black") + 
+  facet_wrap(~Attributes, scales = "free_x") +
+  labs(x = "Value", y = "Frequency")
+```
+
+## Correlation
+```{r}
+library(corrplot)
+corrplot(cor(f), type = "upper", method = "ellipse", tl.cex = 0.9)
+```
+
+# NbCLust
 ```{r}
 library(factoextra)
 library(NbClust)
@@ -49,6 +67,27 @@ fviz_nbclust(f, kmeans, method = "silhouette")+
 # The gap statistic compares the total within intra-cluster variation for different values of k with their expected values under null reference distribution of the data. The estimate of the optimal clusters will be value that maximize the gap statistic. This means that the clustering structure is far away from the random uniform distribution of points.
 fviz_nbclust(f, kmeans, nstart = 25,  method = "gap_stat", nboot = 50)+
   labs(subtitle = "Gap statistic method")
+```
+
+## Clustree
+```{r}
+library(clustree)
+library(dplyr)
+tmp <- NULL
+for (k in 1:4){
+  tmp[k] <- kmeans(f, k, nstart = 30)
+}
+df <- data.frame(tmp)
+# add a prefix to the column names
+colnames(df) <- seq(1:4
+                    )
+colnames(df) <- paste0("k",colnames(df))
+# get individual PCA
+df.pca <- prcomp(df, center = TRUE, scale. = FALSE)
+ind.coord <- df.pca$x
+ind.coord <- ind.coord[,1:2]
+df <- bind_cols(as.data.frame(df), as.data.frame(ind.coord))
+clustree(df, prefix = "k")
 ```
 
 # Fitting K-Means to the dataset
