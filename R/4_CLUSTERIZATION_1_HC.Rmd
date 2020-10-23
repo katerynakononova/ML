@@ -49,7 +49,7 @@ rect.hclust(model_hc, k = 3, border = 2:5)
 ## Visualising the clusters
 ```{r}
 library(cluster)
-clusplot(f,
+clusplot(f[,c('age','income')],
          y_hc,
          lines = 0,
          shade = TRUE,

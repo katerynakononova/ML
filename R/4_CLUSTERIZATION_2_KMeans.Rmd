@@ -93,7 +93,7 @@ clustree(df, prefix = "k")
 # Fitting K-Means to the dataset
 ```{r}
 set.seed(29)
-model_km = kmeans(f, 3)
+model_km = kmeans(f, 2)
 #cluster cores
 y_km = model_km$cluster
 aggregate(f,by=list(y_km),FUN=mean)
@@ -102,7 +102,7 @@ aggregate(f,by=list(y_km),FUN=mean)
 # Visualising the clusters
 ```{r}
 library(cluster)
-clusplot(f,
+clusplot(f[,c('age','income')],
          y_km,
          lines = 0,
          shade = TRUE,
