@@ -8,7 +8,7 @@ output:
 ---
 
 # Merge data
-```{r warning: FALSE}
+```{r}
 f1 <- read.csv('trust_gov.csv', header = TRUE, encoding = 'UNICOD')
 f2 <- read.csv('fsi-2018.csv', header = TRUE, encoding = 'UNICOD')
 
@@ -22,10 +22,14 @@ Append <- as.data.frame(append(f2$fsi, f1$trust.gov, after = 178))
 #Download file to the table. Source file is 'flats.csv'
 f <- read.csv2('flats.csv', header = TRUE, encoding = 'UNICOD')
 #Connect library
-library (dplyr)
-#Have a look at the data
-glimpse(f)  
-head(f)
+library (psych)
+describe(f)
+```
+## Remove mistakes
+```{r}
+f <- f[f$price < 300000, ]
+f <- f[f$price > 10000, ]
+describe(f[,c('rooms','m2','price')])
 ```
 
 # Visualising
@@ -33,11 +37,10 @@ head(f)
 ## Histogram
 ```{r}
 library(ggplot2)
-par(mfrow = c(2, 2))
+par(mfrow = c(1, 3))
+hist(f$rooms, col = 'dark blue', main = 'rooms', xlab = 'Value')
 hist(f$m2, col = 'dark blue', main = 'm2', xlab = 'Value')
-hist(log(f$m2), col = 'blue', main = 'log m2', xlab = 'Value')
-hist(f$price, col = 'dark green', main = 'price', xlab = 'Value')
-hist(log(f$price), col = 'green', main = 'log price', xlab = 'Value')
+hist(f$price, col = 'dark blue', main = 'price', xlab = 'Value')
 ```
 
 ## Box-plot
@@ -60,57 +63,53 @@ qplot(data = f,
       geom = "violin")
 ```
 
-# Statistics
+# Preprocessing
 
+## Factors as numeric
 ```{r}
-library (psych)
-describe(f)
+f$location <- as.numeric(as.factor(f$location))-1
+f$condition <- as.numeric(as.factor(f$condition))-1
+f$type <- as.numeric(as.factor(f$type))-1
 ```
 
-# Ejections (outside the three sigma)
-
-## Remove the ejections (not recommended strategy)
+## Missing data
 ```{r}
-f_ej1 <- f[f$price < mean(f$price)+sd(f$price)*3, ]
-describe(f_ej1$price)
+f$rooms <- ifelse(is.na(f$rooms),round(mean(f$rooms,na.rm = TRUE)),f$rooms)
+f$type <- ifelse(is.na(f$type),round(mean(f$type,na.rm = TRUE)),f$type)
 ```
 
-## Replace with max
+# Visualising
 ```{r}
-f_ej2 <- f
-f_ej2$price <- ifelse(f$price < mean(f$price)+sd(f$price)*3,f$price,mean(f$price)+sd(f$price)*3)
-describe(f_ej2$price)
-#let's work with f_eg2
-f <- f_ej2
+library(ggplot2)
+par(mfrow = c(2, 3))
+hist(f$rooms, col = 'dark blue', main = 'rooms', xlab = 'Value')
+hist(f$m2, col = 'dark blue', main = 'm2', xlab = 'Value')
+hist(f$price, col = 'dark blue', main = 'price', xlab = 'Value')
+hist(log(f$rooms), col = 'dark blue', main = 'rooms', xlab = 'Value')
+hist(log(f$m2), col = 'dark blue', main = 'm2', xlab = 'Value')
+hist(log(f$price), col = 'dark blue', main = 'price', xlab = 'Value')
 ```
 
-# Missing data
-
-## Delete N/A (not recommended strategy) 
+## Log
 ```{r}
-f_reduce <- tidyr::drop_na(f)
-cat('there are',nrow(f_reduce),'rows in the f_reduce')
+f$rooms <- log(f$rooms)
+f$m2 <- log(f$m2)
+f$price <- log(f$price)
+describe(f[,c('rooms','m2','price')])
 ```
 
-## Fill n/a with neighboring values
+## Replace ejections with max (no need)
 ```{r}
-f_fill1 <- tidyr::fill(f, rooms, .direction = 'down')  
-f_fill1 <- tidyr::fill(f_fill1, type, .direction = 'up')
-head(f_fill1)
-```
+f$rooms <- ifelse(f$rooms < mean(f$rooms)+sd(f$rooms)*3,f$rooms,mean(f$rooms)+sd(f$rooms)*3)
+f$rooms <- ifelse(f$rooms > mean(f$rooms)-sd(f$rooms)*3,f$rooms,mean(f$rooms)-sd(f$rooms)*3)
 
-## Fill n/a with average or the most frequent
+f$price <- ifelse(f$price < mean(f$price)+sd(f$price)*3,f$price,mean(f$price)+sd(f$price)*3)
+f$price <- ifelse(f$price > mean(f$price)-sd(f$price)*3,f$price,mean(f$price)-sd(f$price)*3)
 
-```{r}
-f_fill2 <- f
-##with average for integer vars 
-f_fill2$rooms <- ifelse(is.na(f$rooms),round(mean(f$rooms,na.rm = TRUE)),f$rooms)
-##the most frequent for categorical vars
-f_fill2$type <- ifelse(is.na(f$type),which.max(table(f$type)),f$type)
-f_fill2$type <- as.factor(f_fill2$type)
-head(f_fill2)
-#let's work with "filled with ave" data 
-f <- f_fill2
+f$m2 <- ifelse(f$m2 < mean(f$m2)+sd(f$m2)*3,f$m2,mean(f$m2)+sd(f$m2)*3)
+f$m2 <- ifelse(f$m2 > mean(f$m2)-sd(f$m2)*3,f$m2,mean(f$m2)-sd(f$m2)*3)
+
+describe(f[,c('rooms','m2','price')])
 ```
 
 # Splitting the dataset into the TRAIN set and TEST set

@@ -93,7 +93,7 @@ clustree(df, prefix = "k")
 # Fitting K-Means to the dataset
 ```{r}
 set.seed(29)
-model_km = kmeans(f, 2)
+model_km = kmeans(f, 3)
 #cluster cores
 y_km = model_km$cluster
 aggregate(f,by=list(y_km),FUN=mean)
@@ -117,6 +117,6 @@ clusplot(f[,c('age','income')],
 
 # Comparing to HC
 ```{r}
-library(clusteval)
-cluster_similarity(y_hc,y_km)
+#library(clusteval)
+#cluster_similarity(y_hc,y_km)
 ```

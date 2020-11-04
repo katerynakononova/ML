@@ -141,3 +141,21 @@ g_rf <- ggplot(fit, aes(x=f_test.price, y=p_rf)) +
 
 gridExtra::grid.arrange(g_sr,g_mr,g_pr,g_dt,g_rf,ncol=2)
 ```
+
+# Calc prediction error and visualize it
+```{r}
+sr <- mean ((fit$f_test.price - fit$p_sr) ^ 2)
+mr <- mean ((fit$f_test.price - fit$p_mr) ^ 2)
+pr <- mean ((fit$f_test.price - fit$p_pr) ^ 2)
+dt <- mean ((fit$f_test.price - fit$p_dt) ^ 2)
+rf <- mean ((fit$f_test.price - fit$p_rf) ^ 2)
+mse <- data.frame(sr,mr,pr,dt,rf)
+head(mse)
+
+mse1 <- reshape::melt.data.frame(mse)
+head(mse1)
+
+b1 <- ggplot(mse1, aes(x=variable, y=value)) +
+  geom_bar(stat="summary", fun.y="mean", fill = 'royalblue')
+b1
+```

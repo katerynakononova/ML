@@ -13,15 +13,14 @@ output:
 library(keras)
 #install_keras()
 library(tensorflow)
+library(ggplot2)
 ```
 
 # Downloading data
 ```{r}
-#Set Working Directory
-#setwd('D:/ML')
-#OR Choose your Directory in 'Files' and click on 'More' -> 'Set as Working Directory' #Download file to the table.
+library(ggplot2)
 f <- read.csv('iPhone.csv', header = TRUE, encoding = 'UNICOD')
-plot(f)
+plot(f$search)
 ```
 
 ## Transforming data 
@@ -41,8 +40,6 @@ df$y <- 0
 df$y[1:n] <- (df$df[1:n] - ymin ) / (ymax - ymin)
 
 #scaling testing set
-#ymax <- max(df$df[(n+1):N])
-#ymin <- min(df$df[(n+1):N])
 df$y[(n+1):N] <- (df$df[(n+1):N] - ymin ) / (ymax - ymin)
 df$x <- dplyr::lag(df$y)
 head (df)
@@ -65,7 +62,7 @@ y_test <- test$y
 #Timesteps: Separate time steps for a given observations. In this example the timesteps = 1
 #Features: For a univariate case, like in this example, the features = 1
 #The batch size must be a common factor of sizes of both the training and testing samples. 1 is always a sure bet.
-#==========================================================================
+#=======================================================================
 # Reshape the input to 3-dim
 dim(x_train) <- c(length(x_train), 1, 1)
 
@@ -74,7 +71,7 @@ X_shape2 = dim(x_train)[2]
 X_shape3 = dim(x_train)[3]
 batch_size = 1            # must be a common factor of both the train and test samples
 units = 1                 # can adjust this, in model tuninig phase
-#==========================================================================
+#=======================================================================
 model <- keras_model_sequential() 
 model%>%
   layer_lstm(units, batch_input_shape = c(batch_size, X_shape2, X_shape3), stateful= TRUE)%>%

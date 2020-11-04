@@ -37,13 +37,21 @@ print(cm)
 
 # Visualising the Test set results
 ```{r}
-xgrid = expand.grid(age = f_test$age, income = f_test$income)
-ygrid = predict(class_svm_l, xgrid)
-
-#Finally, you plot the points and color them according to the decision boundary. You can see that the decision boundary is linear. You can put the data points in the plot as well to see where they lie.
-
-plot(xgrid, col = as.numeric(ygrid), pch = 10, cex = .9)
-points(f_test[, c('age','income')], col = as.factor(f_test$delays), pch = 19)
+library(ggplot2)
+set = f_test[,c('age','income','delays')]
+X1 = seq(min(set['age']) - 1, max(set['age']) + 1, by = 0.01)
+X2 = seq(min(set['income']) - 1, max(set['income']) + 1, by = 0.01)
+grid_set = expand.grid(X1, X2)
+colnames(grid_set) = c('age', 'income')
+p_grid = predict(class_svm_l, grid_set)
+y_grid <- ifelse(p_grid > 0.5, 1, 0)
+plot(set[, -3],
+     main = 'SVM',
+     xlab = 'Age', ylab = 'Income',
+     xlim = range(X1), ylim = range(X2))
+contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'tomato', 'springgreen3'))
+points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'red3', 'green4'))
 ```
 
 # Fitting RBF-kernel model

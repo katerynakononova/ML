@@ -29,6 +29,7 @@ f$married <- as.numeric(as.factor(f$married))-1
 f$car <- as.numeric(as.factor(f$car))-1
 f$mortgage <- as.numeric(as.factor(f$mortgage))-1
 f$delays <- as.numeric(as.factor(f$delays))-1
+head (f)
 ```
 
 # Splitting the scaled dataset into the TRAIN set and TEST set
@@ -76,12 +77,12 @@ summary(class_opt)
 # Predicting
 ```{r}
 p <- predict(class_opt, f_test[, c('age','income')], type = 'response')
-y <- ifelse(p > 0.7, 1, 0)
+y <- ifelse(p > 0.5, 1, 0)
 ```
 
 ## Confusion Matrix
 ```{r}
-cm = table(f_test[, 'delays'], y > 0.7)
+cm = table(f_test[, 'delays'], y > 0.5)
 print(cm)
 ```
 
@@ -111,6 +112,7 @@ contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
 points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'tomato', 'springgreen3'))
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'red3', 'green4'))
 ```
+
 # Write prepared data to the file
 ```{r}
 write.csv2(f_train, file = "bank_train.csv")

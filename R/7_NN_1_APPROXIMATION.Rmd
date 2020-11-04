@@ -16,27 +16,68 @@ library(ggplot2)
 f <- read.csv2('flats.csv', header = TRUE, encoding = 'UNICOD')
 describe(f)
 ```
+
+# Visualising
+```{r}
+library(ggplot2)
+par(mfrow = c(1, 3))
+hist(f$rooms, col = 'dark blue', main = 'rooms', xlab = 'Value')
+hist(f$m2, col = 'dark blue', main = 'm2', xlab = 'Value')
+hist(f$price, col = 'dark blue', main = 'price', xlab = 'Value')
+```
+
+## Remove mistakes
+```{r}
+f <- f[f$price < 300000, ]
+f <- f[f$price > 10000, ]
+describe(f[,c('rooms','m2','price')])
+```
+
 ## Factors as numeric
 ```{r}
-f$location <- as.numeric(as.factor(f$location))
-f$condition <- as.numeric(as.factor(f$condition))
-f$type <- as.numeric(as.factor(f$type))
+f$location <- as.numeric(as.factor(f$location))-1
+f$condition <- as.numeric(as.factor(f$condition))-1
+f$type <- as.numeric(as.factor(f$type))-1
 ```
 
-## Ejections (outside the three sigma)
+## Missing data
 ```{r}
-f_ej <- f
-f_ej$price <- ifelse(f$price < mean(f$price)+sd(f$price)*3, f$price,mean(f$price)+sd(f$price)*3)
-describe(f_ej$price)
-f <- f_ej
+f$rooms <- ifelse(is.na(f$rooms),round(mean(f$rooms,na.rm = TRUE)),f$rooms)
+f$type <- ifelse(is.na(f$type),round(mean(f$type,na.rm = TRUE)),f$type)
 ```
 
-## Missing data, fill n/a with average 
+# Visualising
 ```{r}
-f_fill <- f
-f_fill$rooms <- ifelse(is.na(f$rooms),round(mean(f$rooms,na.rm = TRUE)),f$rooms)
-f_fill$type <- ifelse(is.na(f$type),round(mean(f$type,na.rm = TRUE)),f$type)
-f <- f_fill
+library(ggplot2)
+par(mfrow = c(2, 3))
+hist(f$rooms, col = 'dark blue', main = 'rooms', xlab = 'Value')
+hist(f$m2, col = 'dark blue', main = 'm2', xlab = 'Value')
+hist(f$price, col = 'dark blue', main = 'price', xlab = 'Value')
+hist(log(f$rooms), col = 'dark blue', main = 'rooms', xlab = 'Value')
+hist(log(f$m2), col = 'dark blue', main = 'm2', xlab = 'Value')
+hist(log(f$price), col = 'dark blue', main = 'price', xlab = 'Value')
+```
+
+## Log
+```{r}
+f$rooms <- log(f$rooms)
+f$m2 <- log(f$m2)
+f$price <- log(f$price)
+describe(f[,c('rooms','m2','price')])
+```
+
+## Replace ejections with max (no need)
+```{r}
+f$rooms <- ifelse(f$rooms < mean(f$rooms)+sd(f$rooms)*3,f$rooms,mean(f$rooms)+sd(f$rooms)*3)
+f$rooms <- ifelse(f$rooms > mean(f$rooms)-sd(f$rooms)*3,f$rooms,mean(f$rooms)-sd(f$rooms)*3)
+
+f$price <- ifelse(f$price < mean(f$price)+sd(f$price)*3,f$price,mean(f$price)+sd(f$price)*3)
+f$price <- ifelse(f$price > mean(f$price)-sd(f$price)*3,f$price,mean(f$price)-sd(f$price)*3)
+
+f$m2 <- ifelse(f$m2 < mean(f$m2)+sd(f$m2)*3,f$m2,mean(f$m2)+sd(f$m2)*3)
+f$m2 <- ifelse(f$m2 > mean(f$m2)-sd(f$m2)*3,f$m2,mean(f$m2)-sd(f$m2)*3)
+
+describe(f[,c('rooms','m2','price')])
 ```
 
 ## Splitting the scaled dataset into the TRAIN set and TEST set
@@ -50,10 +91,30 @@ f_test = subset(f, split == FALSE)
 
 ## Features Scaling
 ```{r}
-f_train_sc <- as.data.frame(scale(f_train))
-f_test_sc <- as.data.frame(scale(f_test))
+mr <- mean(f_train$rooms)
+sr <- sd(f_train$rooms)
+mm <- mean(f_train$m2)
+sm <- sd(f_train$m2)
+mp <- mean(f_train$price)
+sp <- sd(f_train$price)
+
+f_train_sc <- f_train
+f_test_sc <- f_test
+f_train_sc$rooms <- (f_train$rooms-mr)/sr
+f_test_sc$rooms <- (f_test$rooms-mr)/sr
+f_train_sc$m2 <- (f_train$m2-mm)/sm
+f_test_sc$m2 <- (f_test$m2-mm)/sm
+f_train_sc$price <- (f_train$price-mp)/sp
+f_test_sc$price <- (f_test$price-mp)/sp
+
 head (f_train_sc)
 ```
+# Fitting Linear Regression to the Training set
+```{r}
+lr <- lm(price ~ ., f_train_sc)
+summary(lr)
+```
+
 # Fitting the NN
 ```{r results='hide'}
 library(nnet)
@@ -69,12 +130,10 @@ p_y_train <- predict(ff_ap, f_train_sc)
 p_y_test <- predict(ff_ap, f_test_sc)
 ```
 
-## Invert the effect of the scale function
+## Invert the effect of the scaling
 ```{r}
-sc_y_train <- scale(f_train$price)
-y_train <- DMwR::unscale(p_y_train, sc_y_train)
-sc_y_test <- scale(f_test$price)
-y_test <- DMwR::unscale(p_y_test, sc_y_test)
+y_train <- p_y_train*sp+mp
+y_test <- p_y_test*sp+mp
 ```
 
 ## MSE
@@ -98,12 +157,14 @@ ggplot() +
   ylab('price')
 ```
 
+
+
 # Fit NN-2 
 ```{r  results='hide'}
 library(neuralnet)
 
 # fit neural network
-nn = neuralnet(price ~ rooms + location + condition + m2, f_train_sc, hidden = 3, linear.output = T)
+nn = neuralnet(price ~ condition + m2, f_train_sc, hidden = 3, linear.output = T)
 
 # plot neural network
 plot(nn)
@@ -116,8 +177,8 @@ p_y_test_nn <- predict(nn, f_test_sc)
 
 ## Invert the effect of the scale function
 ```{r}
-y_train_nn <- DMwR::unscale(p_y_train_nn, sc_y_train)
-y_test_nn <- DMwR::unscale(p_y_test_nn, sc_y_test)
+y_train_nn <- p_y_train_nn*sp+mp
+y_test_nn <- p_y_test_nn*sp+mp
 ```
 
 ## MSE
@@ -128,6 +189,7 @@ test_mse_nn <- sum((f_test$price-y_test_nn)^2)/length(f_test$price)
 train_mse_nn
 test_mse_nn
 ```
+
 ## Visualising
 ```{r}
 library(ggplot2)
@@ -140,45 +202,10 @@ ggplot() +
   ylab('price')
 ```
 
-# Saving results
-```{r}
-fit <- read.csv2('flats_fit.csv', header = TRUE, encoding = 'UNICOD')
-fit$p_nn <- y_test_nn
-head(fit)
-write.csv2(fit[-1], file = "flats_fit.csv")
-```
-
 ## Compare models
 ```{r}
-g_sr <- ggplot(fit, aes(x=f_test.price, y=p_sr)) + 
-  geom_abline(intercept=0, slope=1) +
-  geom_point(color = 'red', alpha=0.5) + labs(title="Linear Regression", x="Real Price", y="Predicted Price") + 
-  theme(plot.title=element_text(size=10), axis.title.x=element_text(size=7), axis.title.y=element_text(size=7), axis.text.x=element_text(size=5), axis.text.y=element_text(size=5)) + theme(legend.position="none")
-
-g_mr <- ggplot(fit, aes(x=f_test.price, y=p_mr)) + 
-  geom_abline(intercept=0, slope=1) +
-  geom_point(color = 'red', alpha=0.5) + labs(title="Multiple Regression", x="Real Price", y="Predicted Price") + 
-  theme(plot.title=element_text(size=10), axis.title.x=element_text(size=7), axis.title.y=element_text(size=7), axis.text.x=element_text(size=5), axis.text.y=element_text(size=5)) + theme(legend.position="none")
-
-g_pr <- ggplot(fit, aes(x=f_test.price, y=p_pr)) + 
-  geom_abline(intercept=0, slope=1) +
-  geom_point(color = 'red', alpha=0.5) + labs(title="Polynomial Regression", x="Real Price", y="Predicted Price") + 
-  theme(plot.title=element_text(size=10), axis.title.x=element_text(size=7), axis.title.y=element_text(size=7), axis.text.x=element_text(size=5), axis.text.y=element_text(size=5)) + theme(legend.position="none") 
-
-g_dt <- ggplot(fit, aes(x=f_test.price, y=p_dt)) + 
-  geom_abline(intercept=0, slope=1) +
-  geom_point(color = 'red', alpha=0.5) + labs(title="Regression Tree", x="Real Price", y="Predicted Price") + 
-  theme(plot.title=element_text(size=10), axis.title.x=element_text(size=7), axis.title.y=element_text(size=7), axis.text.x=element_text(size=5), axis.text.y=element_text(size=5)) + theme(legend.position="none")
-
-g_rf <- ggplot(fit, aes(x=f_test.price, y=p_rf)) + 
-  geom_abline(intercept=0, slope=1) +
-  geom_point(color = 'red', alpha=0.5) + labs(title="Random Forest", x="Real Price", y="Predicted Price") + 
-  theme(plot.title=element_text(size=10), axis.title.x=element_text(size=7), axis.title.y=element_text(size=7), axis.text.x=element_text(size=5), axis.text.y=element_text(size=5)) + theme(legend.position="none")
-
-g_nn <- ggplot(fit, aes(x=f_test.price, y=p_nn)) + 
-  geom_abline(intercept=0, slope=1) +
-  geom_point(color = 'red', alpha=0.5) + labs(title="Neural Network", x="Real Price", y="Predicted Price") + 
-  theme(plot.title=element_text(size=10), axis.title.x=element_text(size=7), axis.title.y=element_text(size=7), axis.text.x=element_text(size=5), axis.text.y=element_text(size=5)) + theme(legend.position="none")
-
-gridExtra::grid.arrange(g_sr,g_mr,g_pr,g_dt,g_rf,g_nn,ncol=2)
+ggplot() +
+  geom_point(aes(f_test$price, y_test),colour = 'red') +
+  geom_point(aes(f_test$price, y_test_nn),colour = 'dark green', size = 3, alpha=0.5) +
+  geom_abline(intercept=0, slope=1)
 ```

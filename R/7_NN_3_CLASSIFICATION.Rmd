@@ -31,6 +31,18 @@ nn = neuralnet(delays ~ income + age, f_train, hidden = 3, linear.output = T)
 # plot neural network
 plot(nn)
 ```
+## Predicting
+```{r}
+p <- predict(nn, f_test)
+p <- (p > 0.5)
+```
+
+## Confusion Matrix
+```{r}
+cm = table(f_test[, 'delays'], p)
+print(cm)
+```
+
 # Fitting the NN
 ```{r results='hide'}
 library(nnet)
@@ -43,12 +55,9 @@ plot.nnet(ff_cl)
 
 ## Predicting
 ```{r}
-p_nn_cl <- predict(nn, f_test)
-#p <- (p > 0.5)
-#p <- as.factor(p_ff_cl)
+p <- predict(ff_cl, f_test)
+p <- (p > 0.5)
 ```
-
-#### Висновок: визначені класи об'єктів (вектор p)
 
 ## Confusion Matrix
 ```{r}
