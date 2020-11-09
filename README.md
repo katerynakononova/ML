@@ -12,6 +12,7 @@ https://www.youtube.com/playlist?list=PLRBRZETQQ2ztuI53MwjCXaHfl8KcAjKVf
 
 Для бакалаврів, магістрів та докторів філософії, а також викладачів ВНЗ. Матеріал буде корисним вченим і фахівцям, які використовують в роботі технології машинного навчання.
 
+
 <b>Basic course on machine learning</b>
 
 The course deals with the basic principles of data analysis and machine learning; focuses on CRISP-DM methodology and data preparation. Basic models of linear and nonlinear regression, classifications (including logistic regression, support vectors, and k-nearest neighbors, Bayesian classification, decision trees, and random forest), clustering (hierarchical and k-means) are considered.
